@@ -6,15 +6,12 @@ import Entry from '@/components/Entry'
 export default function Page() {
   return(
   <>
-    <div className="h-40 text-amber-900 text-9xl flex items-center pt-10">
-      Games
+    <div className="relative h-70 bg-[url('/Unity-Banner.png')] bg-cover bg-center text-gray-100 text-9xl flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-black to-black/40 z-10" />
+      <div className="relative z-20 pl-10">
+        Game Development
+      </div>
     </div>
-
-    <div className='h-1 bg-red w-full'></div>
-
-    <div className='text-xl text-gray-600 p-5'>My portfolio of Game Design</div>
-
-    <br />
 
     <Entry name="Ribbit Royale"
     link="/Ribbit-Royale"
@@ -26,6 +23,13 @@ export default function Page() {
 
     <Entry name="Pokemon #00B6D5"
     link="/Pokemon"
+    image="/temp.png"
+    technologies={["Unity Game Engine", "C# Programming Language"]}>
+      ...
+    </Entry>
+
+    <Entry name="2048 Rotate"
+    link="/2048-Rotate"
     image="/temp.png"
     technologies={["Unity Game Engine", "C# Programming Language"]}>
       ...
