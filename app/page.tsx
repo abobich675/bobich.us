@@ -14,16 +14,16 @@ export default function Page() {
 
     <div className='flex justify-center'>
       <div className='columns-3'>
-        <Link href="/Games">
+        <Link href="/Game-Development">
           <Card icon="/temp.png" header="Games" description="Developed 3+ games using Unity game engine"></Card>
         </Link>
 
         <Link href="/Web-Development">
-          <Card icon="/temp.png" header="Websites" description="Developed however many websits"></Card>
+          <Card icon="/temp.png" header="Websites" description="Developed however many websites"></Card>
         </Link>
 
         <Link href="/">
-          <Card icon="/temp.png" header="3rd" description="Some 3rd thing"></Card>
+          <Card icon="/temp.png" header="Visualizations" description="Designed 2+ Visualizations"></Card>
         </Link>
       </div>
     </div>

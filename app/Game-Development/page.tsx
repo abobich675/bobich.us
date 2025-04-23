@@ -15,7 +15,7 @@ export default function Page() {
 
     <Entry name="Ribbit Royale"
     link="/Ribbit-Royale"
-    image="/temp2.png"
+    image="/Ribbit-Royale.jpeg"
     technologies={["Unity Game Engine", ".NET Multiplayer Framework", "C# Programming Language"]}>
       A cute, whimsical party game for friends to designed to bring players together through fun, competitive, and engaging multiplayer minigames.
       Embrace your inner frog by swinging with your tongue, admiring other swamp animals, and evading dangerous snakes.
@@ -23,17 +23,23 @@ export default function Page() {
 
     <Entry name="Pokemon #00B6D5"
     link="/Pokemon"
-    image="/temp.png"
+    image="/Weezermon.png"
     technologies={["Unity Game Engine", "C# Programming Language"]}>
       ...
     </Entry>
 
     <Entry name="2048 Rotate"
     link="/2048-Rotate"
-    image="/temp.png"
+    image="/2048-Rotate.png"
     technologies={["Unity Game Engine", "C# Programming Language"]}>
-      ...
+      A fun, relaxing puzzle experience where balls sizes combine when they touch each other.
+      Manipulate the balls by taking control of gravity itself.
+      As balls continue to collide, they merge into larger balls, creating opportunities for higher scores.
+      Inspired by popular games 2048 and Suika Game.
     </Entry>
+
+    <br />
+    <br />
     
   </>
   )
