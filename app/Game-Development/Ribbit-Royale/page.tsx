@@ -16,8 +16,8 @@ export default function Page() {
         <div className='text-2xl pb-5 text-gray-800'>
           Description:
         </div>
-        Over the span of 10 weeks, I led a group of 5 other students in designing our very own party video game for our Software Engineering 2 class.
-        The game runs on the Unity game engine, .NET multiplayer framework, and C#.
+        Over the span of 10 weeks, I led a group of five students in designing and developing a custom party video game for our Software Engineering II course.
+        Built using the Unity game engine, the game features C# scripting and utilizes the .NET framework for multiplayer functionality.
 
         <div className='text-2xl pb-5 pt-5 text-gray-800'>
           Abstract:
