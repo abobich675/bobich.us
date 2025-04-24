@@ -33,7 +33,7 @@ export default function Page() {
       A fun, relaxing puzzle experience where balls sizes combine when they touch each other.
       Manipulate the balls by taking control of gravity itself.
       As balls continue to collide, they merge into larger balls, creating opportunities for higher scores.
-      Inspired by popular games 2048 and Suika Game.
+      Inspired by popular games <i>2048</i> and <i>Suika Game</i>.
     </Entry>
 
     <br />
