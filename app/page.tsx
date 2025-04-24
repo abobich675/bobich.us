@@ -5,7 +5,7 @@ import Card from '@/components/Card'
 export default function Page() {
   return(
   <>
-    <div className="h-80 bg-blue-100 text-gray-800 text-9xl items-center p-20">
+    <div className="h-80 bg-blue-100 text-9xl items-center p-20">
       <div className='pb-5'>
           hello. i'm adam
       </div>
@@ -28,20 +28,18 @@ export default function Page() {
     <div className='flex justify-center'>
       <div className='columns-3'>
         <Link href="/Game-Development">
-          <Card icon="/Unity-Symbol.png" header="Games" description="Developed 3+ games using Unity game engine"></Card>
+          <Card icon="/Unity-Symbol.png" header="Games" description="Video Games developed with Unity Game Engine"></Card>
         </Link>
 
         <Link href="/Web-Development">
-          <Card icon="/React-Symbol.png" header="Websites" description="Developed however many websites"></Card>
+          <Card icon="/React-Symbol.png" header="Websites" description="X+ Websites developed using Next.js"></Card>
         </Link>
 
-        <Link href="/">
-          <Card icon="/Visualization-Symbol.png" header="Visualizations" description="Designed Data Visualizations"></Card>
+        <Link href="/Visualizations">
+          <Card icon="/Visualization-Symbol.png" header="Visualizations" description="Data Visualization Designs"></Card>
         </Link>
       </div>
     </div>
-    {/* <Image src="/profile.png" alt="Profile" width={100} height={100} /> */}
-    {/* <Hexagon /> */}
   </>
   )
 }
