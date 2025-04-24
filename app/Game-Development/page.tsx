@@ -12,7 +12,7 @@ export default function Page() {
 
     <Entry name="Ribbit Royale"
     link="/Game-Development/Ribbit-Royale"
-    image="/Ribbit-Royale.jpeg"
+    image="/Ribbit-Royale/Ribbit-Royale.jpeg"
     technologies={["Unity Game Engine", ".NET Multiplayer Framework", "C# Programming Language"]}>
       A cute, whimsical party game for friends to designed to bring players together through fun, competitive, and engaging multiplayer minigames.
       Embrace your inner frog by swinging with your tongue, admiring other swamp animals, and evading dangerous snakes.
