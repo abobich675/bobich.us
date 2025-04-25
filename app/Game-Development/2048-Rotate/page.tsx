@@ -7,9 +7,13 @@ export default function Page() {
     <Link href="/Game-Development" className='text-gray-500'> Game Development </Link> / 2048 Rotate
 
     <div className="text-4xl pt-5 pb-5"> 2048 Rotate </div>
+    <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+      <Image src="/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' />
+    </Link>
     {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
       <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
     </Link> */}
+      
 
     <div className='pt-10 text-lg flex gap-20'>
       <div className='w-full text-gray-600'>
