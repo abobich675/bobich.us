@@ -9,6 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>Adam Bobich</title>
       <body>
         <div className='h-15 w-full flex flex-row text-2xl'>
           <Link href="/" className='flex'>
