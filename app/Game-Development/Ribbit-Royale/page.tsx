@@ -30,6 +30,16 @@ export default function Page() {
         </div>
         As the Project Manager and Gameplay Developer, I designed and implemented 2 of the 3 minigames: "Lickity Split" and "Swamp Spotting".
         This included implementing multiplayer synchronization as well as configuring the physics engine and designing a tongue swinging mechanic, which allows players to utilize swinging as means to gain speed and reach the goal at breakneck speeds.
+
+        <div className="relative w-full pb-[56.25%] h-0 mt-10">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/Md5dIc12z-E"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
       </div>
       <div className='flex-shrink-0 justify-end'>
         <Image src="/Ribbit-Royale/Ribbit-Royale.jpeg" alt="Image1" width={400} height={100} className='pb-10'/>

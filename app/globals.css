@@ -38,3 +38,11 @@ body {
 .text-blue {
   color: #88d6ff;
 }
+
+.outline-red {
+  outline-color: #dd3e3e;
+}
+
+.outline-blue {
+  outline-color: #88d6ff;
+}
