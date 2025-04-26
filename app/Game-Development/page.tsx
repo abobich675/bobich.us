@@ -20,7 +20,7 @@ export default function Page() {
 
     <Entry name="Pokemon #00B6D5"
     link="/Game-Development/Pokemon"
-    image="/Weezermon.png"
+    image="/Pokemon/Battle.png"
     technologies={["Unity Game Engine", "C# Programming Language"]}>
       Pokemon #00B6D5 is a one-on-one battle experience where players face off in a single, high-stakes Pokemon match against none other than the legendary alt-rock band Weezer.
       Set in a nostalgic arena with a pixel-perfect vibe, the game blends strategic turn-based combat with absurd humor and band-themed easter eggs.
