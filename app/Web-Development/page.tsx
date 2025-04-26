@@ -3,7 +3,7 @@ import Entry from '@/components/Entry'
 export default function Page() {
   return(
   <>
-    <div className="relative h-70 bg-[url('/web-dev.png')] bg-cover bg-center text-gray-100 text-9xl flex items-center">
+    <div className="relative h-70 bg-[url('/Web-Development-Banner.png')] bg-cover bg-center text-gray-100 text-9xl flex items-center">
       <div className="absolute inset-0 bg-gradient-to-r from-black to-black/50 z-10" />
       <div className="relative z-20 pl-10">
         Web Development
