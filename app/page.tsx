@@ -43,7 +43,9 @@ export default function Page() {
           I also work on coding projects in my free time, such as video game designs, websites, and data visualizations.
       </div>
       <div className='flex-shrink-0 justify-end pr-30'>
-        <Image src="/Profile.png" alt="Profile Picture" width={300} height={300} className='rounded-full outline-3 outline-blue'/>
+        <div className='w-full h-full rounded-full outline-3 outline-blue p-1'>
+          <Image src="/Profile.png" alt="Profile Picture" width={300} height={300} className='rounded-full'/>
+        </div>
       </div>
     </div>
 
