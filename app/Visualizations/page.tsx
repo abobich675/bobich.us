@@ -19,13 +19,6 @@ export default function Page() {
       By letting users interact with a 2D tiling and reflecting their actions in real-time 3D, the program shows how simple shapes transform into cubes.
     </Entry>
 
-    <Entry name="Graph Visualization"
-    link="/Visualizations/Graphs"
-    image="/temp.png"
-    technologies={["Unity Game Engine", "C#"]}>
-      ...
-    </Entry>
-
     <Entry name="Tree Generation"
     link="/Visualizations/Trees"
     image="/Tree-Gen/1.png"
@@ -33,6 +26,15 @@ export default function Page() {
       This project investigates how simple recursive systems, when combined with adjustable randomness, can create visually rich structures.
       By controlling factors like branching patterns and deviation angles, users can explore a spectrum from precise fractal trees to loose, nature-inspired forms.
       The result highlights the balance between mathematical precision and organic unpredictability in procedural generation.
+    </Entry>
+
+    <Entry name="Graph Visualization"
+    link="/Visualizations/Graphs"
+    image="/Graphs/1.png"
+    technologies={["Unity Game Engine", "C#"]}>
+      This project explores how physics-based simulations can be applied to graph visualization in both 2D and 3D spaces.
+      By balancing attractive and repulsive forces between nodes, the system dynamically organizes graphs into clear, coherent layouts.
+      The approach highlights how simple physical rules can reveal structure and relationships within complex networks.
     </Entry>
 
     <br />

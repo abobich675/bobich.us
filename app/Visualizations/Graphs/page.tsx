@@ -16,18 +16,22 @@ export default function Page() {
         <div className='text-2xl pb-5 text-gray-800'>
           Description:
         </div>
-        hello
-        <br /><br />
-        hello2
+        This project creates and visualizes graphs by randomly generating nodes and edges, or by taking a graph structure as input.
+        To produce clean and readable layouts, it uses a physics-based approach where nodes repel each other like magnets while edges act like springs, pulling connected nodes together.
+        The system supports both 2D and 3D visualizations, allowing graphs to settle naturally into clear, spatially intuitive forms.
+        Built in Unity, the project demonstrates how simple physical simulations can be used to organize and reveal the underlying structure of complex data in multiple dimensions.
 
         <div className='text-2xl pb-5 pt-5 text-gray-800'>
           Abstract:
         </div>
-        hello one more time.
+        This project explores how physics-based simulations can be applied to graph visualization in both 2D and 3D spaces.
+        By balancing attractive and repulsive forces between nodes, the system dynamically organizes graphs into clear, coherent layouts.
+        The approach highlights how simple physical rules can reveal structure and relationships within complex networks.
         
       </div>
       <div className='flex-shrink-0 justify-end'>
-        <Image src="/temp.png" alt="Image1" width={400} height={100} className='pb-10'/>
+        <Image src="/Graphs/1.png" alt="Image1" width={300} height={100} className='pb-10'/>
+        <embed src="/Graphs/3D.gif" width={400} className='pb-10' />
       </div>
     </div>
     
