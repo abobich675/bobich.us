@@ -8,7 +8,7 @@ export default function Page() {
 
     <div className="text-4xl pt-5 pb-5"> Ribbit Royale </div>
     <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-      <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
+      <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
     </Link>
 
     <div className='pt-10 text-lg flex gap-20'>

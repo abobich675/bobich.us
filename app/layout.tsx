@@ -14,17 +14,17 @@ export default function RootLayout({
         <div className='h-15 w-full flex flex-row text-2xl'>
           <Link href="/" className='flex'>
             <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/home.png" alt="Home" width={100} height={100} className='w-full h-full object-contain' />
+              <Image src="/icons/home.png" alt="Home" width={100} height={100} className='w-full h-full object-contain' />
             </div>
           </Link>
           <Link href="/Resume" className='flex'>
             <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/resume.png" alt="Resume" width={100} height={100} className='w-full h-full object-contain' />
+              <Image src="/icons/resume.png" alt="Resume" width={100} height={100} className='w-full h-full object-contain' />
             </div>
           </Link>
           <Link href="mailto:abobich675@gmail.com" className='flex'>
             <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/email.png" alt="email" width={100} height={100} className='w-full h-full object-contain' />
+              <Image src="/icons/email.png" alt="email" width={100} height={100} className='w-full h-full object-contain' />
             </div>
           </Link>
         </div>
