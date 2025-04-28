@@ -20,17 +20,19 @@ export default function Page() {
     </Entry>
 
     <Entry name="Graph Visualization"
-    link="/Visualizations/Graph-Generator"
+    link="/Visualizations/Graphs"
     image="/temp.png"
     technologies={["Unity Game Engine", "C#"]}>
       ...
     </Entry>
 
-    <Entry name="Tree Generator"
-    link="/Visualizations/Tree-Generator"
-    image="/temp.png"
+    <Entry name="Tree Generation"
+    link="/Visualizations/Trees"
+    image="/Tree-Gen/1.png"
     technologies={["Unity Game Engine", "C#"]}>
-      ...
+      This project investigates how simple recursive systems, when combined with adjustable randomness, can create visually rich structures.
+      By controlling factors like branching patterns and deviation angles, users can explore a spectrum from precise fractal trees to loose, nature-inspired forms.
+      The result highlights the balance between mathematical precision and organic unpredictability in procedural generation.
     </Entry>
 
     <br />
