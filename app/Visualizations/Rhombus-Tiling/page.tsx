@@ -26,10 +26,11 @@ export default function Page() {
         <div className='text-2xl pb-5 pt-5 text-gray-800'>
           Abstract:
         </div>
+
         This project focuses on visualizing a mathematical concept involving rhombus tiling and rotation.
-        The user interacts with a 2D display of rhombuses that can be rotated in 60-degree increments.
-        A corresponding 3D representation reflects the changes in real-time, allowing users to explore how simple 2D shapes can transform into 3D cubes.
-        The project emphasizes user interaction through click detection and coordinates conversion.
+        It leverages the fact that three rhombuses can be grouped together to form a hexagon, which can then be rotated by 60 degrees to modify the tiling.
+        The user can select three adjacent rhombuses in a 2D display to perform a rotation, dynamically altering the structure.
+        A corresponding 3D representation reflects the changes in real-time, allowing users to explore how simple 2D shapes can transform into 3D cubes using rotation and coordinate conversion.
         
       </div>
       <div className='flex-shrink-0 justify-end'>
