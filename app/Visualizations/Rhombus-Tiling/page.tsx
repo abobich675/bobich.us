@@ -17,8 +17,10 @@ export default function Page() {
           Description:
         </div>
         For this project, I created an interactive visualization to explore a mathematical problem involving the tiling of rhombuses.
-        The goal was to display how three rhombuses can be grouped to form a hexagon, and how rotating the hexagon by 60 degrees transforms the tiling.
-        By converting the 2D rhombuses into 3D cubes, the visualization bridges the gap between two-dimensional and three-dimensional representations, helping users understand complex coordinate transformations.
+        The core concept lies in the idea that 3 rhombuses can be grouped to form a hexagon, and that these hexagons can be interpreted as a 3D isometric arrangement of cubes depending on their rotation.
+        Rotating a hexagon by 60-degrees creates a cube where there wasn't one before, and rotating 60-degrees once more removes it.
+        The program allows the user to select rhombuses and rotate them, while updating a real-time display of the 3D representation of cubes.
+        This assists the user in bridging the gap between two-dimensional and three-dimensional representations, helping users understand complex coordinate transformations.
         <br /><br />
         Built with OpenGL, the project emphasizes challenges in converting coordinates into a 3rd dimension, detecting clicks, and applying dynamic rotations.
         It provides an interactive, digestible way to visualize how tiled 2D rhombuses may represent cubes in a 3D space.
@@ -26,14 +28,13 @@ export default function Page() {
         <div className='text-2xl pb-5 pt-5 text-gray-800'>
           Abstract:
         </div>
-
         This project focuses on visualizing a mathematical concept involving rhombus tiling and rotation.
-        It leverages the fact that three rhombuses can be grouped together to form a hexagon, which can then be rotated by 60 degrees to modify the tiling.
-        The user can select three adjacent rhombuses in a 2D display to perform a rotation, dynamically altering the structure.
-        A corresponding 3D representation reflects the changes in real-time, allowing users to explore how simple 2D shapes can transform into 3D cubes using rotation and coordinate conversion.
+        It presents the fact that three rhombuses can be grouped together to form a hexagon and that by rotating these groups, a 2D tiling can be interpreted as a 3D isometric arrangement of cubes.
+        By letting users interact with a 2D tiling and reflecting their actions in real-time 3D, the program shows how simple shapes transform into cubes.
         
       </div>
       <div className='flex-shrink-0 justify-end'>
+        <Image src="/Rhombus-Tiling-Concept.png" alt="Image1" width={400} height={100} className='pb-10'/>
         <Image src="/Rhombus-Tiling1.png" alt="Image1" width={400} height={100} className='pb-10'/>
         <Image src="/Rhombus-Tiling2.png" alt="Image2" width={400} height={100} className='pb-10'/>
       </div>
