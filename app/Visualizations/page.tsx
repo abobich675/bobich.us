@@ -10,6 +10,13 @@ export default function Page() {
       </div>
     </div>
 
+    <Entry name="Rhombus Tiling"
+    link="/Visualizations/Rhombus-Tiling"
+    image="/Rhombus-Tiling1.png"
+    technologies={["OpenGL"]}>
+      ...
+    </Entry>
+
     <Entry name="Graph Visualization"
     link="/Visualizations/Graph-Generator"
     image="/temp.png"
