@@ -22,7 +22,7 @@ export default function Page() {
 
     <Entry name="Bittner Development Group"
     link="https://bittnerdev.com/"
-    image="/temp.png"
+    image="/Bittner.png"
     technologies={["React", "Ruby", "HTML", "PCAT"]}>
       Working at the Bittner Development Group, I worked on interactive textbooks for clients.
       I engineered web features and performed Quality Assurance + DevOps for over 20 interactive chapters.
