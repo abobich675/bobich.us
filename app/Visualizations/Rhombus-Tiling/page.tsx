@@ -34,9 +34,9 @@ export default function Page() {
         
       </div>
       <div className='flex-shrink-0 justify-end'>
-        <Image src="/Rhombus-Tiling-Concept.png" alt="Image1" width={400} height={100} className='pb-10'/>
-        <Image src="/Rhombus-Tiling1.png" alt="Image1" width={400} height={100} className='pb-10'/>
-        <Image src="/Rhombus-Tiling2.png" alt="Image2" width={400} height={100} className='pb-10'/>
+        <Image src="/Rhombus-Tiling/Concept.png" alt="Image1" width={400} height={100} className='pb-10'/>
+        <Image src="/Rhombus-Tiling/1.png" alt="Image1" width={400} height={100} className='pb-10'/>
+        <Image src="/Rhombus-Tiling/2.png" alt="Image2" width={400} height={100} className='pb-10'/>
       </div>
     </div>
     

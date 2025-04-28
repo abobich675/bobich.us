@@ -12,7 +12,7 @@ export default function Page() {
 
     <Entry name="Rhombus Tiling"
     link="/Visualizations/Rhombus-Tiling"
-    image="/Rhombus-Tiling1.png"
+    image="/Rhombus-Tiling/1.png"
     technologies={["OpenGL"]}>
       This project focuses on visualizing a mathematical concept involving rhombus tiling and rotation.
       It presents the fact that three rhombuses can be grouped together to form a hexagon and that by rotating these groups, a 2D tiling can be interpreted as a 3D isometric arrangement of cubes.
