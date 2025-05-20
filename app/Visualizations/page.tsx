@@ -4,7 +4,7 @@ import Banner from '@/components/Banner'
 export default function Page() {
   return(
   <>
-    <Banner image='Visualizations-Banner.png' textColor='text-gray-100'>
+    <Banner image='/Visualizations-Banner.png' textColor='text-gray-100'>
       Visualizations
     </Banner>    
 

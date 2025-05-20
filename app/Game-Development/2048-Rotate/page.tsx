@@ -16,7 +16,7 @@ export default function Page() {
       </Link> */}
       
       <ImageColumn images={["/2048-Rotate.png"]}>
-        <div className='text-2xl pb-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
           Description:
         </div>
         This was a solo project and one of my first full games.
@@ -24,7 +24,7 @@ export default function Page() {
         Players control gravity in four directions to guide movement and create high-scoring combinations.
         This game helped me build a strong foundation in Unity physics, game logic, and designing engaging solo gameplay loops.
 
-        <div className='text-2xl pb-5 pt-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
           Abstract:
         </div>
         A fun, relaxing puzzle experience where balls sizes combine when they touch each other.
