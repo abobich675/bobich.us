@@ -1,22 +1,21 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ImageColumn from '@/components/ImageColumn'
  
 export default function Page() {
   return(
-  <div className='p-20 pt-5'>
-    <Link href="/Game-Development" className='text-gray-500'> Game Development </Link> / 2048 Rotate
+    <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
+      <Link href="/Game-Development" className='text-gray-500'> Game Development </Link> / 2048 Rotate
 
-    <div className="text-4xl pt-5 pb-5"> 2048 Rotate </div>
-    <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-      <Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' />
-    </Link>
-    {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-      <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
-    </Link> */}
+      <div className="text-4xl pt-5 pb-5"> 2048 Rotate </div>
+      <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+        <Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' />
+      </Link>
+      {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+        <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
+      </Link> */}
       
-
-    <div className='pt-10 text-lg flex gap-20'>
-      <div className='w-full text-gray-600'>
+      <ImageColumn images={["/2048-Rotate.png"]}>
         <div className='text-2xl pb-5 text-gray-800'>
           Description:
         </div>
@@ -31,12 +30,7 @@ export default function Page() {
         A fun, relaxing puzzle experience where balls sizes combine when they touch each other.
         Manipulate the balls by taking control of gravity itself.
         As balls continue to collide, they merge into larger balls, creating opportunities for higher scores.
-
-      </div>
-      <div className='flex-shrink-0 justify-end'>
-        <Image src="/2048-Rotate.png" alt="Image1" width={400} height={100} className='pt-10'/>
-      </div>
+      </ImageColumn>
     </div>
-  </div>
   )
 }

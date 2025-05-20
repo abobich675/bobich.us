@@ -1,10 +1,10 @@
-type EntryProps = {
+type BannerProps = {
     textColor: string;
     image: string;
     children?: React.ReactNode;
   };
 
-const Banner = ({textColor, image, children}: EntryProps) => {
+const Banner = ({textColor, image, children}: BannerProps) => {
     return (
         <>
             {/* Small */}
