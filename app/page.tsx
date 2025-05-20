@@ -7,7 +7,7 @@ export default function Page() {
 
   return(
   <>
-    <div className="h-45 sm:h-60 lg:h-80 bg-blue-100 text-9xl items-center p-1 pl-20 lg:p-20">
+    <div className="h-45 sm:h-60 lg:h-80 bg-blue-100 text-9xl items-center p-1 pl-10 sm:pl-15 lg:pl-20 lg:p-20">
       {/* Small */}
       <div className='sm:hidden pb-0'>
         <TextTypeDelete
