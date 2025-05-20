@@ -1,14 +1,12 @@
 import Entry from '@/components/Entry'
+import Banner from '@/components/Banner'
  
 export default function Page() {
   return(
   <>
-    <div className="relative h-70 bg-[url('/Visualizations-Banner.png')] bg-cover bg-center text-gray-100 text-9xl flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-black to-black/30 z-10" />
-      <div className="relative z-20 pl-10">
-        Visualizations
-      </div>
-    </div>
+    <Banner image='Visualizations-Banner.png' textColor='text-gray-100'>
+      Visualizations
+    </Banner>    
 
     <Entry name="Rhombus Tiling"
     link="/Visualizations/Rhombus-Tiling"

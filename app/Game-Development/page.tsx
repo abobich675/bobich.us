@@ -1,14 +1,12 @@
 import Entry from '@/components/Entry'
+import Banner from '@/components/Banner'
  
 export default function Page() {
   return(
   <>
-    <div className="relative h-70 bg-[url('/Unity-Banner.png')] bg-cover bg-center text-gray-100 text-9xl flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-black to-black/30 z-10" />
-      <div className="relative z-20 pl-10">
-        Game Development
-      </div>
-    </div>
+    <Banner textColor="text-gray-100" image="/Unity-Banner.png">
+      Game Development
+    </Banner>
 
     <Entry name="Ribbit Royale"
     link="/Game-Development/Ribbit-Royale"
