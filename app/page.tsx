@@ -60,8 +60,27 @@ export default function Page() {
       </div>
     </div>
 
-    <div className='flex gap-5 lg:gap-20 sm:gap-10 p-20 pl-5 lg:pl-20'>
-      <div className="text-xs lg:text-lg md:text-sm w-full">
+    {/* Small */}
+    <div className='sm:hidden block p-10 pl-5'>
+      <div className='flex justify-center pb-10'>
+        <div className='rounded-full outline-3 outline-blue p-1 w-min'>
+          <div className="relative w-[150px] h-[150px]">
+            <Image src="/Profile.png" alt="Profile Picture" fill className='rounded-full'/>
+          </div>
+        </div>
+      </div>
+      <div className="text-sm w-full">
+        <div className='text-4xl pb-5'>Hi!</div>
+          I'm Adam, a 2nd year student at Oregon State University studying Computer Science and Artificial Intelligence.
+          I'm excited to implement AI in new ways that push the barriers of what we thought possible.
+          <br/><br/>
+          I also work on coding projects in my free time, such as video game designs, websites, and data visualizations.
+      </div>
+    </div>
+
+    {/* Large */}
+    <div className='hidden sm:flex gap-5 lg:gap-20 sm:gap-10 p-20 pl-5 lg:pl-20'>
+      <div className="text-sm md:text-lg w-full">
         <div className='text-4xl pb-5'>Hi!</div>
           I'm Adam, a 2nd year student at Oregon State University studying Computer Science and Artificial Intelligence.
           I'm excited to implement AI in new ways that push the barriers of what we thought possible.
