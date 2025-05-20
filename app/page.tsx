@@ -7,8 +7,33 @@ export default function Page() {
 
   return(
   <>
-    <div className="h-80 bg-blue-100 text-9xl items-center p-20">
-      <div className='pb-5'>
+    <div className="h-45 sm:h-60 lg:h-80 bg-blue-100 text-9xl items-center p-1 pl-20 lg:p-20">
+      {/* Small */}
+      <div className='sm:hidden pb-0'>
+        <TextTypeDelete
+          constText={"Hello! I'm "}
+          typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
+          fontSize='20px'
+          cursorHeight='20px'
+          cursorWidth='1'
+          textAlign='left'>
+        </TextTypeDelete>
+      </div>
+
+      {/* Medium */}
+      <div className='hidden sm:block lg:hidden pb-5'>
+        <TextTypeDelete
+          constText={"Hello! I'm "}
+          typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
+          fontSize='60px'
+          cursorHeight='60px'
+          cursorWidth='3'
+          textAlign='left'>
+        </TextTypeDelete>
+      </div>
+
+      {/* Large */}
+      <div className='hidden lg:block pb-5'>
         <TextTypeDelete
           constText={"Hello! I'm "}
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
@@ -20,16 +45,16 @@ export default function Page() {
       </div>
 
       <div className='flex gap-10'>
-        <Link href="/Resume" className='w-8 h-8 flex items-center justify-center'>
+        <Link href="/Resume" className='w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center'>
           <Image src="/icons/resume.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
         </Link>
-        <Link href="https://www.linkedin.com/in/adambobich/" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+        <Link href="https://www.linkedin.com/in/adambobich/" target="_blank" className='w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center'>
           <Image src="/icons/linkedin.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
         </Link>
-        <Link href="https://github.com/abobich675" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+        <Link href="https://github.com/abobich675" target="_blank" className='w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center'>
           <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
         </Link>
-        <Link href="mailto:abobich675@gmail.com" className='w-8 h-8 flex items-center justify-center'>
+        <Link href="mailto:abobich675@gmail.com" className='w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center'>
           <Image src="/icons/email.png" alt='email' width={100} height={100} className='w-full h-full object-contain' />
         </Link>
       </div>
