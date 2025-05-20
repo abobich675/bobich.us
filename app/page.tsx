@@ -25,9 +25,9 @@ export default function Page() {
         <TextTypeDelete
           constText={"Hello! I'm "}
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
-          fontSize='60px'
-          cursorHeight='60px'
-          cursorWidth='3'
+          fontSize='35px'
+          cursorHeight='35px'
+          cursorWidth='2'
           textAlign='left'>
         </TextTypeDelete>
       </div>
@@ -37,9 +37,9 @@ export default function Page() {
         <TextTypeDelete
           constText={"Hello! I'm "}
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
-          fontSize='80px'
-          cursorHeight='80px'
-          cursorWidth='4'
+          fontSize='60px'
+          cursorHeight='60px'
+          cursorWidth='3'
           textAlign='left'>
         </TextTypeDelete>
       </div>
