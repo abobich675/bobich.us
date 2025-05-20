@@ -17,7 +17,7 @@ const Entry = ({ name, link, image, technologies, children}: EntryProps) => {
         <div className='flex items-center gap-4 text-2xl md:text-4xl lg:text-5xl text-left p-5 pb-2'>
             <strong>{name}</strong>
         </div>
-        <div className='flex w-full pb-5 h-60'>
+        <div className='flex w-full pb-5 h-80 sm:h-60'>
             <div className='flex w-full justify-between gap-4 pl-7.5 md:pl-10 lg:pl-15'>
                 <div className='flex-2 text-gray-600 pr-5 text-xs md:text-sm lg:text-base'>
                 {children}
