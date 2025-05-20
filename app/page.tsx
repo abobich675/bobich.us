@@ -88,7 +88,7 @@ export default function Page() {
           I also work on coding projects in my free time, such as video game designs, websites, and data visualizations.
       </div>
       <div className='flex-shrink-0 justify-end lg:pr-[7.5%] sm:pr-0'>
-        <div className='rounded-full outline-3 outline-blue p-1'>
+        <div className='rounded-full border-3 border-blue p-1'>
           <div className="relative w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] sm:w-[30vw] sm:h-[30vw]">
             <Image src="/Profile.png" alt="Profile Picture" fill className='rounded-full'/>
           </div>
