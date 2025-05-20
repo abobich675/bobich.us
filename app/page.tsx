@@ -96,8 +96,8 @@ export default function Page() {
       </div>
     </div>
 
-    <div className='flex justify-center'>
-      <div className='columns-3 pl-1 pr-1'>
+    <div className='flex justify-center pl-2 pr-2'>
+      <div className='columns-3'>
         <Link href="/Game-Development">
           <Card icon="/Unity-Symbol.png" header="Games" description="Video Games developed with Unity Game Engine"></Card>
         </Link>
