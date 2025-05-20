@@ -11,12 +11,12 @@ const Card = ({ icon, header, description}: CardProps) => {
     return (
         <>
             {/* Small */}
-            <div className="md:hidden relative rounded-3xl bg-white outline-2 outline-gray-300 w-35 h-50 p-2.5 pt-2 pb-0 flex flex-col justify-between" >
+            <div className="md:hidden relative rounded-3xl bg-white outline-2 outline-gray-300 w-30 h-40 p-2.5 pt-2 pb-0 flex flex-col justify-between" >
                 <div className='flex justify-center'>
                     <Image src={icon} alt={"Image of " + header} width={75} height={75} className="rounded-md" /> 
                 </div>
-                <div className="text-sm text-center">{header}</div>
-                <div className="text-xs text-center flex items-baseline pb-5">{description}</div>
+                <div className="text-xs text-center">{header}</div>
+                <div className="text-[0.5rem] text-center flex items-baseline pb-5">{description}</div>
             </div>
 
             {/* Medium */}
