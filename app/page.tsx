@@ -15,7 +15,7 @@ export default function Page() {
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
           fontSize='20px'
           cursorHeight='20px'
-          cursorWidth='1'
+          cursorWidth='1px'
           textAlign='left'>
         </TextTypeDelete>
       </div>
@@ -27,7 +27,7 @@ export default function Page() {
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
           fontSize='35px'
           cursorHeight='35px'
-          cursorWidth='2'
+          cursorWidth='2px'
           textAlign='left'>
         </TextTypeDelete>
       </div>
@@ -39,7 +39,7 @@ export default function Page() {
           typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
           fontSize='60px'
           cursorHeight='60px'
-          cursorWidth='3'
+          cursorWidth='3px'
           textAlign='left'>
         </TextTypeDelete>
       </div>
