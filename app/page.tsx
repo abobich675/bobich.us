@@ -63,7 +63,7 @@ export default function Page() {
     {/* Small */}
     <div className='sm:hidden block p-10 pl-5'>
       <div className='flex justify-center pb-10'>
-        <div className='rounded-full outline-3 outline-blue p-1 w-min'>
+        <div className='rounded-full border-3 border-blue p-1 w-min'>
           <div className="relative w-[150px] h-[150px]">
             <Image src="/Profile.png" alt="Profile Picture" fill className='rounded-full'/>
           </div>
@@ -96,7 +96,7 @@ export default function Page() {
       </div>
     </div>
 
-    <div className='flex justify-center pl-2 pr-2'>
+    <div className='flex justify-center'>
       <div className='columns-3'>
         <Link href="/Game-Development">
           <Card icon="/Unity-Symbol.png" header="Games" description="Video Games developed with Unity Game Engine"></Card>
