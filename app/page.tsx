@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Card from '@/components/Card'
+import Entry from '@/components/Entry'
 import TextTypeDelete from '@/components/TextTypeDelete'
  
 export default function Page() {
@@ -61,7 +62,7 @@ export default function Page() {
     </div>
 
     {/* Small */}
-    <div className='sm:hidden block p-10 pl-5'>
+    <div className='sm:hidden block p-10 pl-5 pb-5'>
       <div className='flex justify-center pb-10'>
         <div className='rounded-full border-3 border-blue p-1 w-min'>
           <div className="relative w-[150px] h-[150px]">
@@ -79,7 +80,7 @@ export default function Page() {
     </div>
 
     {/* Large */}
-    <div className='hidden sm:flex gap-5 lg:gap-20 sm:gap-10 p-20 pl-5 lg:pl-20'>
+    <div className='hidden sm:flex gap-5 lg:gap-20 sm:gap-10 p-20 pl-5 lg:pl-20 pb-5 lg:pb-10'>
       <div className="text-sm md:text-lg w-full">
         <div className='text-4xl pb-5'>Hi!</div>
           I'm Adam, a 2nd year student at Oregon State University studying Computer Science and Artificial Intelligence.
@@ -94,6 +95,31 @@ export default function Page() {
           </div>
         </div>
       </div>
+    </div>
+
+    <div className='p-5 sm:p-5 lg:p-20 pt-0 sm:pt-0 lg:pt-0 pb-5 sm:pb-5 lg:pb-10'>
+      <div className='text-4xl pb-3'>
+        Current Projects
+      </div>
+
+      <Entry name="Minecraft Web Development Mod"
+      type={2}
+      link="/Web-Development/Minecraft"
+      image="/temp.png"
+      technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
+        A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting capabilities.
+        This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
+        It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
+      </Entry>
+
+      <Entry name="CharismaBot Speaker-Listener Web AI"
+      type={2}
+      image="/temp.png"
+      technologies={["HTML", "JavaScript", "Python"]}>
+        CharismaBot is a conversational AI system that I'm working on as undergraduate research with Charisma Robotics.
+        It that implements the Speaker-Listener Technique using voice input, emotion detection, and large language models.
+      </Entry>
+      
     </div>
 
     <div className='flex justify-center'>
