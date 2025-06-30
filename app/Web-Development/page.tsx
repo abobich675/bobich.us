@@ -8,6 +8,15 @@ export default function Page() {
       Visualizations
     </Banner>    
 
+    <Entry name="Minecraft Web Development Mod"
+    link="/Web-Development/Minecraft"
+    image="/temp.png"
+    technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
+      A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting capabilities.
+      This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
+      It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
+    </Entry>
+
     <Entry name="Food Filter"
     link="https://foodfilter.onrender.com/"
     image="/Food-Filter.png"
