@@ -7,9 +7,9 @@ export default function Page() {
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Web-Development" className='text-gray-500'> Web Development </Link> / Minecraft Web Development Mod
 
-      <div className="text-4xl pt-5 pb-5"> Minecraft Web Development Mod </div>
-      <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-        <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
+      <div className="text-4xl pt-5"> Minecraft Web Development Mod </div>
+      <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
+        <div className='w-1/2 h-1/2'><Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
       </Link>
 
       <ImageColumn images={["/temp.png"]}>

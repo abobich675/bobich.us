@@ -7,13 +7,11 @@ export default function Page() {
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Game-Development" className='text-gray-500'> Game Development </Link> / 2048 Rotate
 
-      <div className="text-4xl pt-5 pb-5"> 2048 Rotate </div>
-      <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-        <Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' />
+      <div className="text-4xl pt-5"> 2048 Rotate </div>
+
+      <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
+        <div className='w-1/2 h-1/2'><Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' /></div>
       </Link>
-      {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-        <Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
-      </Link> */}
       
       <ImageColumn images={["/2048-Rotate.png"]}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
