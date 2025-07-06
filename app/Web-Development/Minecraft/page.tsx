@@ -8,11 +8,18 @@ export default function Page() {
       <Link href="/Web-Development" className='text-gray-500'> Web Development </Link> / Minecraft Web Development Mod
 
       <div className="text-4xl pt-5"> Minecraft Web Development Mod </div>
-      <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-        <div className='w-1/2 h-1/2'><Image src="/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
-      </Link>
 
-      <ImageColumn images={["/temp.png"]}>
+      <div className='flex'>
+        <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
+        </Link>
+
+        <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain' /></div>
+        </Link>
+      </div>
+
+      <ImageColumn images={["/Minecraft-Web-Dev.png"]}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
           Description:
         </div>
