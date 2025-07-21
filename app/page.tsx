@@ -49,13 +49,13 @@ export default function Page() {
         <Link href="/Resume" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
           <div className='w-2/3 h-2/3'><Image src="/icons/resume.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /> </div>
         </Link>
-        <Link href="/https://www.linkedin.com/in/adambobich/" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
+        <Link href="https://www.linkedin.com/in/adambobich/" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
           <div className='w-2/3 h-2/3'><Image src="/icons/linkedin.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /> </div>
         </Link>
-        <Link href="/https://github.com/abobich675" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
+        <Link href="https://github.com/abobich675" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
           <div className='w-2/3 h-2/3'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /> </div>
         </Link>
-        <Link href="/mailto:abobich675@gmail.com" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
+        <Link href="mailto:abobich675@gmail.com" className='w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-blue-200'>
           <div className='w-2/3 h-2/3'><Image src="/icons/email.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /> </div>
         </Link>
       </div>
