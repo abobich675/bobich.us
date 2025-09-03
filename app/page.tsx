@@ -128,15 +128,15 @@ export default function Page() {
     <div className='flex justify-center'>
       <div className='columns-3'>
         <Link href="/Game-Development">
-          <Card icon="/Unity-Symbol.png" header="Games" description="Video Games developed with Unity Game Engine"></Card>
+          <Card icon="/Unity-Symbol.png" header="Games"></Card>
         </Link>
 
         <Link href="/Web-Development">
-          <Card icon="/React-Symbol.png" header="Websites" description="15+ Websites developed using React/Next.js"></Card>
+          <Card icon="/React-Symbol.png" header="Websites"></Card>
         </Link>
 
         <Link href="/Visualizations">
-          <Card icon="/Visualization-Symbol.png" header="Visualizations" description="Data Visualization and Implementation"></Card>
+          <Card icon="/Visualization-Symbol.png" header="Visualizations"></Card>
         </Link>
       </div>
     </div>
