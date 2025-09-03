@@ -72,10 +72,11 @@ export default function Page() {
       </div>
       <div className="text-sm w-full">
         <div className='text-4xl pb-5'>Hi!</div>
-          I'm Adam, a 2nd year student at Oregon State University studying Computer Science and Artificial Intelligence.
-          I'm excited to implement AI in new ways that push the barriers of what we thought possible.
+          I'm Adam, a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence.
+          I'm passionate about developing innovative new systems that push the limits of what we thought possible.
           <br/><br/>
-          I also work on coding projects in my free time, such as video game designs, websites, and data visualizations.
+          Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
+          Take a look at some of my projects below:
       </div>
     </div>
 
@@ -83,10 +84,11 @@ export default function Page() {
     <div className='hidden sm:flex gap-5 lg:gap-20 sm:gap-10 p-20 pl-5 lg:pl-20 pb-5 lg:pb-10'>
       <div className="text-sm md:text-lg w-full">
         <div className='text-4xl pb-5'>Hi!</div>
-          I'm Adam, a 2nd year student at Oregon State University studying Computer Science and Artificial Intelligence.
-          I'm excited to implement AI in new ways that push the barriers of what we thought possible.
+          I'm Adam, a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence.
+          I'm passionate about developing innovative new systems that push the limits of what we thought possible.
           <br/><br/>
-          I also work on coding projects in my free time, such as video game designs, websites, and data visualizations.
+          Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
+          Take a look at some of my projects below:
       </div>
       <div className='flex-shrink-0 justify-end lg:pr-[7.5%] sm:pr-0'>
         <div className='rounded-full border-3 border-blue p-1'>
@@ -117,8 +119,8 @@ export default function Page() {
       link="https://github.com/imshrirangpatil/speaker-listener-web-ai"
       image="/Charisma.png"
       technologies={["Python", "Socketio Communication", "HTML", "JavaScript"]}>
-        CharismaBot is a conversational AI system that I'm working on as undergraduate research with Charisma Robotics.
-        It that implements the Speaker-Listener Technique using voice input, emotion detection, and large language models.
+        CharismaBot is a conversational counseling AI system that I'm helping to develop as an undergraduate researcher with Charisma Robotics.
+        The bot implements the Speaker-Listener Technique using voice input, emotion detection, and large language models.
       </Entry>
       
     </div>
