@@ -130,15 +130,6 @@ export default function Page() {
         This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
         It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
       </Entry>
-
-      <Entry name="CharismaBot Speaker-Listener Web AI"
-      type={2}
-      link="https://github.com/imshrirangpatil/speaker-listener-web-ai"
-      image="/Charisma.png"
-      technologies={["Python", "Socketio Communication", "HTML", "JavaScript"]}>
-        CharismaBot is a conversational counseling AI system that I'm helping to develop as an undergraduate researcher with Charisma Robotics.
-        The bot implements the Speaker-Listener Technique using voice input, emotion detection, and large language models.
-      </Entry>
       
     </div>
 
