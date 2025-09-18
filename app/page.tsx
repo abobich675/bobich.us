@@ -104,6 +104,23 @@ export default function Page() {
         Current Projects
       </div>
 
+      <Entry name="Ant Simulation"
+      type={2}
+      link="/Visualizations/Ant-Simulation"
+      image="/Ants/1.png"
+      technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
+        A GPU-accelerated ant colony simulation powered by Unity compute shaders on a hexagonal grid.
+        Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
+      </Entry>
+
+      <Entry name="Hackathon Judging Platform"
+      type={2}
+      link="/Web-Development/Beaverhacks"
+      image="/temp.png"
+      technologies={["Next.js", "Prisma", "Figma"]}>
+        Lorem
+      </Entry>
+
       <Entry name="Minecraft Web Development Mod"
       type={2}
       link="/Web-Development/Minecraft"
