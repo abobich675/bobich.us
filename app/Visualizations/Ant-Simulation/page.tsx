@@ -8,9 +8,9 @@ export default function Page() {
     <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Ant Simulation
 
     <div className="text-4xl pt-5 pb-5"> Ant Simulation </div>
-    {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
+    <Link href="https://github.com/abobich675/AntSimulation" target="_blank" className='w-8 h-8 flex items-center justify-center'>
       <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
-    </Link> */}
+    </Link>
 
     <ImageColumn images={["/Ants/slow.gif", "/Ants/fast.gif"]}>
       <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
