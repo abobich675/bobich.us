@@ -116,9 +116,10 @@ export default function Page() {
       <Entry name="Hackathon Judging Platform"
       type={2}
       link="/Web-Development/Beaverhacks"
-      image="/temp.png"
-      technologies={["Next.js", "Prisma", "Figma"]}>
-        Lorem
+      image="/Beaverhacks/1.png"
+      technologies={["Next.js", "Prisma", "Typescript", "Figma"]}>
+        A web-based hackathon judging and team submission platform built with Next.js and Prisma.
+        This project strengthened my skills in full-stack development, database integration, and building production-ready applications in a collaborative setting.
       </Entry>
 
       <Entry name="Minecraft Web Development Mod"
