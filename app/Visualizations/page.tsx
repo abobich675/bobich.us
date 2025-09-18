@@ -6,7 +6,15 @@ export default function Page() {
   <>
     <Banner image='/Visualizations-Banner.png' textColor='text-gray-100'>
       Visualizations
-    </Banner>    
+    </Banner>
+
+    <Entry name="Ant Simulation"
+      link="/Visualizations/Ant-Simulation"
+      image="/Ants/1.png"
+      technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
+        A GPU-accelerated ant colony simulation powered by Unity compute shaders on a hexagonal grid.
+        Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
+    </Entry>
 
     <Entry name="Rhombus Tiling"
     link="/Visualizations/Rhombus-Tiling"
