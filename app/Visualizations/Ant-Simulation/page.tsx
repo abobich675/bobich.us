@@ -12,7 +12,7 @@ export default function Page() {
       <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
     </Link>
 
-    <ImageColumn images={["/Ants/slow.gif", "/Ants/fast.gif"]}>
+    <ImageColumn images={["/Ants/Slow.gif", "/Ants/Fast.gif"]}>
       <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
         Description:
       </div>
