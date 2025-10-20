@@ -5,7 +5,7 @@ export default function Page() {
   return(
   <>
     <Banner image='/Web-Development-Banner.png' textColor='text-gray-100'>
-      Visualizations
+      Web Development
     </Banner>
 
     <Entry name="Hackathon Judging Platform"
