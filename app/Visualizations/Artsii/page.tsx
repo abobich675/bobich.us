@@ -34,13 +34,13 @@ export default function Page() {
         On the frontend, we designed an interactive website where users can generate art from text prompts, view their results instantly, and contribute to a communal gallery showcasing artwork from other visitors.
         <br/><br/>
         My main responsibilities included integrating the AI image generation API and connecting the subsystems split between multiple programs and languages.
-        The project emphasized balancing creativity and technical precision, and it challenged us to optimize performance and visual fidelity within the 24-hour timeframe while maintaining a cohesive, polished user experience.
+        The project pushed us to find the right balance between creativity and technical precision, as we worked to optimize performance and image quality, all within the 24-hour timeframe.
         
         <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
           Abstract:
         </div>
         A creative web app built in just 24 hours that transforms AI-generated images into colorful, retro-style ASCII art.
-        Using Python for image analysis and a modern web frontend for interactivity, Artsii converts pixel data into text-based renderings and features a communal gallery where users can share their creations—blending childhood imagination with modern AI creativity.
+        Using Python for image analysis and a modern web frontend for interactivity, Artsii converts pixel data into text-based renderings and features a communal gallery where users can share their creations, blending childhood imagination with modern day technology.
       </ImageColumn>
 
     </div>
