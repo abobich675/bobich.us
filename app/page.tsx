@@ -104,6 +104,15 @@ export default function Page() {
         Current Projects
       </div>
 
+      <Entry name="ASCII Art Generator"
+      type={2}
+      link="/Visualizations/Artsii"
+      image="/Artsii/1.png"
+      technologies={["Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
+        A creative web app built in just 24 hours that transforms AI-generated images into colorful, retro-style ASCII art.
+        Using Python for image analysis and a modern web frontend for interactivity, Artsii converts pixel data into text-based renderings and features a communal gallery where users can share their creations—blending childhood imagination with modern AI creativity.
+      </Entry>
+
       <Entry name="Ant Simulation"
       type={2}
       link="/Visualizations/Ant-Simulation"

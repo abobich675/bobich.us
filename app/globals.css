@@ -39,6 +39,10 @@ body {
   color: #88d6ff;
 }
 
+.hover\:text-blue:hover {
+  color: #60a5fa;
+}
+
 .border-red {
   border-color: #dd3e3e;
 }
