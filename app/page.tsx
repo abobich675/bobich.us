@@ -73,7 +73,7 @@ export default function Page() {
       <div className="text-sm w-full">
         <div className='text-4xl pb-5'>Hi!</div>
           I'm Adam, a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence.
-          I'm passionate about developing innovative new systems that push the limits of what we thought possible.
+          I'm passionate about software development, researching sustainable artificial intelligence, and developing innovative new systems that push the limits of what we thought possible.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
           Take a look at some of my projects below:
@@ -85,7 +85,7 @@ export default function Page() {
       <div className="text-sm md:text-lg w-full">
         <div className='text-4xl pb-5'>Hi!</div>
           I'm Adam, a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence.
-          I'm passionate about developing innovative new systems that push the limits of what we thought possible.
+          I'm passionate about software development, researching sustainable artificial intelligence, and developing innovative new systems that push the limits of what we thought possible.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
           Take a look at some of my projects below:
