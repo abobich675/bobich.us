@@ -10,7 +10,7 @@ export default function Page() {
       <div className="text-4xl pt-5"> ASCII Art Generator </div>
 
       <div className='flex'>
-        <Link href="https://github.com/abobich675/ASCII-Art" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
+        <Link href="https://github.com/abobich675/artsii" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
           <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
         </Link>
         <Link href="https://devpost.com/software/artsii" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
