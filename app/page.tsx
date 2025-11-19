@@ -82,14 +82,12 @@ export default function Page() {
 
 
     <div className='px-50 py-20'>
-      <div className='flex justify-center text-4xl py-10'>
-        Work Experience
-      </div>
+      <div className='py-10'>WORK EXPERIENCE</div>
       <LinkedList
         colors={["#9966ee", "#7766ff", "#5544ff"]}
         items={[
           <WorkExperience
-            company="Beaverhacks, Oregon State University"
+            company="Beaverhacks"
             title="Software Engineer"
             start="Jun 2025"
             stop="Present"
@@ -124,10 +122,8 @@ export default function Page() {
       />
     </div>
 
-    <div className='p-5 sm:p-5 lg:p-20 pt-0 sm:pt-0 lg:pt-0 pb-5 sm:pb-5 lg:pb-10'>
-      <div className='text-4xl pb-3'>
-        Current Projects
-      </div>
+    <div className='px-50 pb-20'>
+      <div className='py-10'>CURRENT PROJECTS</div>
 
       <Entry name="ASCII Art Generator"
       type={2}
@@ -143,47 +139,19 @@ export default function Page() {
       link="/Visualizations/Ant-Simulation"
       image="/Ants/1.png"
       technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
-        A GPU-accelerated ant colony simulation powered by Unity compute shaders on a hexagonal grid.
-        Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
+          A GPU-accelerated ant colony simulation powered by Unity compute shaders on a hexagonal grid.
+          Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
       </Entry>
-
-      <Entry name="Hackathon Judging Platform"
-      type={2}
-      link="/Web-Development/Beaverhacks"
-      image="/Beaverhacks/1.png"
-      technologies={["Next.js", "Prisma", "Typescript", "Figma"]}>
-        A web-based hackathon judging and team submission platform built with Next.js and Prisma.
-        This project strengthened my skills in full-stack development, database integration, and building production-ready applications in a collaborative setting.
-      </Entry>
-
       <Entry name="Minecraft Web Development Mod"
       type={2}
       link="/Web-Development/Minecraft"
       image="/Minecraft-Web-Dev-Site.png"
       technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
-        A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting.
-        This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
-        It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
+          A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting.
+          This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
+          It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
       </Entry>
-      
     </div>
-
-    <div className='flex justify-center'>
-      <div className='columns-3'>
-        <Link href="/Game-Development">
-          <Card icon="/Unity-Symbol.png" header="Games"></Card>
-        </Link>
-
-        <Link href="/Web-Development">
-          <Card icon="/React-Symbol.png" header="Websites"></Card>
-        </Link>
-
-        <Link href="/Visualizations">
-          <Card icon="/Visualization-Symbol.png" header="Visualizations"></Card>
-        </Link>
-      </div>
-    </div>
-    <br/><br/><br/><br/><br/>
   </>
   )
 }

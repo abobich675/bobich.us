@@ -12,7 +12,7 @@ type EntryProps = {
     children?: React.ReactNode;
   };
 
-const Entry = ({ type = 1, name, link, image, technologies, barColor, children}: EntryProps) => {
+const Entry = ({ type = 2, name, link, image, technologies, barColor, children}: EntryProps) => {
     if (type == 2) {
         const content = (
         <div className={link ? 'hover:bg-white/2' : ''}>
@@ -20,12 +20,12 @@ const Entry = ({ type = 1, name, link, image, technologies, barColor, children}:
                 <strong>{name}</strong>
             </div>
             <div className='flex w-full pb-5 h-80 sm:h-60'>
-                <div className='flex w-full justify-between gap-4 pl-7.5 md:pl-10 lg:pl-15'>
-                    <div className='flex-2 text-gray-600 pr-5 text-xs md:text-sm lg:text-base'>
+                <div className='flex w-full justify-between gap-4 pl-12'>
+                    <div className='flex-3 text-gray-600 pr-5 text-xs md:text-sm lg:text-base'>
                     {children}
                     </div>
                     {technologies && technologies.length > 0 && (
-                        <div className='hidden md:block flex-1 pr-5 pl-5'>
+                        <div className='hidden md:block flex-2 pr-5 pl-5'>
                             
                             <div className='text-xl'> <strong>Technologies</strong> </div>
                             <ul className="list-disc list-inside mt-3 text-md text-gray-600">
@@ -35,7 +35,7 @@ const Entry = ({ type = 1, name, link, image, technologies, barColor, children}:
                             </ul>
                         </div>
                     )}
-                    <div className='flex-2 flex justify-end'>
+                    <div className='flex-3 flex justify-end pr-5 pb-5'>
                         {image && <Image src={image} alt={"Image"} width={200} height={200} className="rounded-md w-full h-full object-contain" /> }
                     </div>
                 </div>
