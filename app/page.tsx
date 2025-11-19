@@ -123,7 +123,7 @@ export default function Page() {
     </div>
 
     <div className='px-50 pb-20'>
-      <div className='py-10'>CURRENT PROJECTS</div>
+      <div className='py-5'>CURRENT PROJECTS</div>
 
       <Entry name="ASCII Art Generator"
       type={2}

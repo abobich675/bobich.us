@@ -1,12 +1,11 @@
 import Entry from "@/components/Entry";
+import PortfolioDropdown from "@/components/PortfolioDropdown";
 
 export default function Page() {
     return(
-        <div className="pt-40">
+        <div className="px-30 pt-30">
             <div className='p-5 sm:p-5 lg:p-20 pt-0 sm:pt-0 lg:pt-0 pb-5 sm:pb-5 lg:pb-10'>
-                <div className='text-4xl pb-3'>
-                    Current Projects
-                </div>
+                <PortfolioDropdown />
 
                 <Entry name="ASCII Art Generator"
                 type={2}
