@@ -9,7 +9,7 @@ export default function Page() {
 
   return(
   <>
-    <div className='flex w-350 gap-10 px-50 pt-20'>
+    <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
       <div className='flex-2'>
         ABOUT ME
         <TextTypeDelete
@@ -38,16 +38,16 @@ export default function Page() {
           Take a look at some of my projects below:
         </div>
       </div>
-      <div className='flex-1 flex items-center'>
+      <div className='flex-1 hidden sm:flex items-center'>
         <div className='rounded-full border-3 border-(--accent-color) p-1'>
-          <div className="relative w-[300px] h-[300px]">
+          <div className="relative sm:w-[175px] sm:h-[175px] md:w-[225px] md:h-[225px] lg:w-[300px] lg:h-[300px]">
             <Image src="/Profile.png" alt="Profile Picture" fill className='rounded-full'/>
           </div>
         </div>
       </div>
     </div>
 
-    <div className='flex w-350 gap-10 px-50'>
+    <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
       <div className='flex-2 pt-10 text-xl'>
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
@@ -80,7 +80,7 @@ export default function Page() {
     </div>
 
 
-    <div className='px-50 py-20'>
+    <div className='px-10 xl:px-50 py-20'>
       <div className='py-10'>WORK EXPERIENCE</div>
       <LinkedList
         colors={["#9966ee", "#7766ff", "#5544ff"]}
@@ -121,7 +121,7 @@ export default function Page() {
       />
     </div>
 
-    <div className='px-50 pb-20'>
+    <div className='px-10 xl:px-50 pb-20'>
       <div className='py-5'>CURRENT PROJECTS</div>
 
       <Entry name="ASCII Art Generator"

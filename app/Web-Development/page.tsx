@@ -4,7 +4,7 @@ import PortfolioDropdown from '@/components/PortfolioDropdown'
  
 export default function Page() {
   return(
-    <div className='px-50 pt-30 pb-20'>
+    <div className='px-10 xl:px-50 pt-30 pb-20'>
       <PortfolioDropdown value='WEBSITES' />
 
       <Entry name="Hackathon Judging Platform"
