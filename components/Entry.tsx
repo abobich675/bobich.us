@@ -20,7 +20,7 @@ const Entry = ({ type = 2, name, link, image, technologies, barColor, children}:
                 <strong>{name}</strong>
             </div>
             <div className='flex w-full pb-5 h-80 sm:h-60'>
-                <div className='flex w-full justify-between gap-4 pl-12'>
+                <div className='flex w-full justify-between gap-4 pl-5'>
                     <div className='flex-3 text-gray-600 pr-5 text-xs md:text-sm lg:text-base'>
                     {children}
                     </div>
