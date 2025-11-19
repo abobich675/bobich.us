@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Card from '@/components/Card'
 import Entry from '@/components/Entry'
 import TextTypeDelete from '@/components/TextTypeDelete'
 import LinkedList from '@/components/LinkedList'
