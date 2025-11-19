@@ -9,12 +9,12 @@ export default function Page() {
 
       <div className="text-4xl pt-5"> 2048 Rotate </div>
 
-      <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-        <div className='w-1/2 h-1/2'><Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain' /></div>
+      <Link href="https://toontownmc.itch.io/2048-rotate" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+        <div className='w-1/2 h-1/2'><Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain filter' /></div>
       </Link>
       
       <ImageColumn images={["/2048-Rotate.png"]}>
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         This was a solo project and one of my first full games.
@@ -22,7 +22,7 @@ export default function Page() {
         Players control gravity in four directions to guide movement and create high-scoring combinations.
         This game helped me build a strong foundation in Unity physics, game logic, and designing engaging solo gameplay loops.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
           Abstract:
         </div>
         A fun, relaxing puzzle experience where balls sizes combine when they touch each other.

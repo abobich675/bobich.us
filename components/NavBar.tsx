@@ -16,13 +16,13 @@ const NavBar = () => {
                         Home
                     </Button>
                 </Link>
-                <Link href="Portfolio">
+                <Link href="/Portfolio">
                     <Button className='hover:bg-white/10 rounded-none'>
                         <span className='w-4 h-4'><Image src="/icons/blueprint.png" alt='portfolio' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></span>
                         Portfolio
                     </Button>
                 </Link>
-                <Link href="Resume">
+                <Link href="/Resume">
                     <Button className='hover:bg-white/10 rounded-none'>
                         <span className='w-4 h-4'><Image src="/icons/resume.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></span>
                         Resume
