@@ -111,13 +111,6 @@ export default function Page() {
                 Inspired by popular games <i>2048</i> and <i>Suika Game</i>.
             </Entry>
 
-            <Entry name="Web Development Class"
-            image="/Handlebars.png"
-            technologies={["Node.js", "Handlebars.js", "HTML", "JavaScript", "CSS"]}>
-                In my Oregon State University Web Development and Introduction to Databases classes, I designed 8 websites.
-                These websites were originally designed using only HTML, but grew to use increasing amounts of JavaScript and eventually incorperated dynamic content via Handlebars.js.
-            </Entry>
-
             <Entry name="Bittner Development Group"
             link="https://bittnerdev.com/"
             image="/Bittner.png"

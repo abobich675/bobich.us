@@ -28,7 +28,7 @@ const Entry = ({ type = 2, name, link, image, technologies, barColor, children}:
                         <div className='hidden md:block flex-2 pr-5 pl-5'>
                             
                             <div className='text-xl'> <strong>Technologies</strong> </div>
-                            <ul className="list-disc list-inside mt-3 text-md text-gray-600">
+                            <ul className="list-disc list-outside pl-5 mt-3 text-md text-gray-600">
                                 {technologies.map((tech, index) => (
                                     <li key={index}>{tech}</li>
                                 ))}
