@@ -15,7 +15,7 @@ type EntryProps = {
 const Entry = ({ type = 1, name, link, image, technologies, barColor, children}: EntryProps) => {
     if (type == 2) {
         const content = (
-        <div className={link ? 'hover:bg-gray-100' : ''}>
+        <div className={link ? 'hover:bg-white/2' : ''}>
             <div className='flex items-center gap-4 text-1xl md:text-2xl lg:text-3xl text-left p-5 pb-2'>
                 <strong>{name}</strong>
             </div>
@@ -51,7 +51,7 @@ const Entry = ({ type = 1, name, link, image, technologies, barColor, children}:
         );
     } else {
         const content = (
-        <div className={link ? 'hover:bg-gray-200' : ''}>
+        <div className={link ? 'hover:bg-white/2' : ''}>
             <div className={`h-1 ${barColor ? barColor : 'bg-gray-800'} w-full flex gap-4`}></div>
             
             <div className='flex items-center gap-4 text-2xl md:text-4xl lg:text-5xl text-left p-5 pb-2'>
