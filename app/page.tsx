@@ -24,7 +24,15 @@ export default function Page() {
           constTextColor='var(--primary-text-color)'
           typeTextColor='var(--accent-color)'>
         </TextTypeDelete>
-        <div className='text-gray-400'>
+        <div className='grid grid-cols-[30px_1fr] gap-2 items-center pb-5 text-gray-500'>
+          <div className='w-6 h-6'><Image src="/icons/pin.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
+          <div>Based in San Carlos, California</div>
+          <div className='w-6 h-4'><Image src="/icons/calendar.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
+          <div>21 Years Old</div>
+          <div className='w-6 h-5'><Image src="/icons/hat.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
+          <div>Pursuing a Bachelor's in Computer Science</div>
+        </div>
+        <div>
           As a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about software development, researching sustainable artificial intelligence, and developing innovative new systems that push the limits of what we thought possible.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
@@ -49,7 +57,7 @@ export default function Page() {
             return (
               <span
                 key={index}
-                className='py-0.5 px-2 mr-1 text-sm border border-white/40 bg-white/10 rounded-full'>
+                className='py-0.5 px-2 mr-1 text-sm border border-white/20 bg-white/5 rounded-full'>
                   {skill}
                 </span>
             )
@@ -59,17 +67,14 @@ export default function Page() {
       <div className='flex-1 pt-10 text-xl'>
         Find Out More
         <div className='flex gap-2 mt-5'>
-          <Link href="/Resume" className='w-10 h-10 flex items-center justify-center rounded-full hover:bg-(--accent-color) border border-(--accent-color)/50'>
-            <div className='w-1/2 h-1/2'><Image src="/icons/resume.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
-          </Link>
-          <Link href="https://www.linkedin.com/in/adambobich/" target="_blank" className='w-10 h-10  flex items-center justify-center rounded-full hover:bg-(--accent-color) border border-(--accent-color)/50'>
+          <Link href="https://www.linkedin.com/in/adambobich/" target="_blank" className='w-10 h-10  flex items-center justify-center rounded-full hover:bg-(--accent-color)/30 border border-(--accent-color)/50'>
             <div className='w-1/2 h-1/2'><Image src="/icons/linkedin.png" alt='linkedin' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           </Link>
-          <Link href="https://github.com/abobich675" target="_blank" className='w-10 h-10  flex items-center justify-center rounded-full hover:bg-(--accent-color) border border-(--accent-color)/50'>
+          <Link href="https://github.com/abobich675" target="_blank" className='w-10 h-10  flex items-center justify-center rounded-full hover:bg-(--accent-color)/30 border border-(--accent-color)/50'>
             <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           </Link>
-          <Link href="mailto:abobich675@gmail.com" className='w-10 h-10  flex items-center justify-center rounded-full hover:bg-(--accent-color) border border-(--accent-color)/50'>
-            <div className='w-1/2 h-1/2'><Image src="/icons/email.png" alt='email' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
+          <Link href="/Resume" className='w-10 h-10 flex items-center justify-center rounded-full hover:bg-(--accent-color)/30 border border-(--accent-color)/50'>
+            <div className='w-1/2 h-1/2'><Image src="/icons/resume.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           </Link>
         </div>
       </div>
