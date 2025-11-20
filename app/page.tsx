@@ -8,8 +8,8 @@ import WorkExperience from '@/components/WorkExperience'
 export default function Page() {
 
   return(
-  <>
-    <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
+  <div className='w-full max-w-7xl mx-auto overflow-hidden gap-10 px-10 xl:px-50 pt-20'>
+    <div className='flex gap-10'>
       <div className='flex-2'>
         <h1>ABOUT ME</h1>
         <div className='block lg:hidden pt-5'>
@@ -62,7 +62,7 @@ export default function Page() {
       </div>
     </div>
 
-    <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
+    <div className='flex gap-10 pt-20'>
       <div className='flex-2 pt-10 text-xl'>
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
@@ -93,9 +93,7 @@ export default function Page() {
         </div>
       </div>
     </div>
-
-
-    <div className='px-10 xl:px-50 py-20'>
+    <div className='py-20'>
       <h1 className='py-10'>WORK EXPERIENCE</h1>
       <LinkedList
         colors={["#9966ee", "#7766ff", "#5544ff"]}
@@ -136,7 +134,7 @@ export default function Page() {
       />
     </div>
 
-    <div className='px-10 xl:px-50 pb-20'>
+    <div className='pb-20'>
       <h1 className='py-5'>CURRENT PROJECTS</h1>
 
       <Entry name="ASCII Art Generator"
@@ -166,6 +164,6 @@ export default function Page() {
           It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
       </Entry>
     </div>
-  </>
+  </div>
   )
 }
