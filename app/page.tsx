@@ -12,17 +12,32 @@ export default function Page() {
     <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
       <div className='flex-2'>
         ABOUT ME
-        <TextTypeDelete
-          constText={"Hi! I'm "}
-          typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
-          fontSize='50px'
-          cursorHeight='50px'
-          cursorWidth='1.5px'
-          cursorColor='var(--accent-color)'
-          textAlign='left'
-          constTextColor='var(--primary-text-color)'
-          typeTextColor='var(--accent-color)'>
-        </TextTypeDelete>
+        <div className='block lg:hidden pt-5'>
+          <TextTypeDelete
+            constText={"Hi! I'm "}
+            typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
+            fontSize='25px'
+            cursorHeight='25px'
+            cursorWidth='1.5px'
+            cursorColor='var(--accent-color)'
+            textAlign='left'
+            constTextColor='var(--primary-text-color)'
+            typeTextColor='var(--accent-color)'>
+          </TextTypeDelete>
+        </div>
+        <div className='hidden lg:block'>
+          <TextTypeDelete
+            constText={"Hi! I'm "}
+            typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
+            fontSize='45px'
+            cursorHeight='45px'
+            cursorWidth='1.5px'
+            cursorColor='var(--accent-color)'
+            textAlign='left'
+            constTextColor='var(--primary-text-color)'
+            typeTextColor='var(--accent-color)'>
+          </TextTypeDelete>
+        </div>
         <div className='grid grid-cols-[30px_1fr] gap-2 items-center pb-5 text-gray-500'>
           <div className='w-6 h-6'><Image src="/icons/pin.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           <div>Based in San Carlos, California</div>
