@@ -22,31 +22,3 @@ body {
   color: var(--color-gray-800);
   font-family: Georgia, Arial, Helvetica, sans-serif;
 }
-
-.bg-red {
-  background-color: #dd3e3e;
-}
-
-.bg-blue {
-  background-color: #88d6ff;
-}
-
-.text-red {
-  color: #dd3e3e;
-}
-
-.text-blue {
-  color: #88d6ff;
-}
-
-.hover\:text-blue:hover {
-  color: #60a5fa;
-}
-
-.border-red {
-  border-color: #dd3e3e;
-}
-
-.border-blue {
-  border-color: #88d6ff;
-}
