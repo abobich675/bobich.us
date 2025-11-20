@@ -10,18 +10,18 @@ export default function Page() {
       <div className="text-4xl pt-5"> Hackathon Judging Platform </div>
 
       <div className='flex'>
-        <Link href="https://github.com/OregonStateHackathonClub/judge" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
+        <Link href="https://github.com/OregonStateHackathonClub/judge" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
         </Link>
 
         {/* TODO: Link to website itself */}
-        {/* <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain' /></div>
+        {/* <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
         </Link> */}
       </div>
 
       <ImageColumn images={["/Beaverhacks/1.png", "/Beaverhacks/2.png", "/Beaverhacks/3.png"]}>
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         As part of my university’s hackathon club, I worked on a small team to develop a full-stack project submission and judging platform for hackathon projects and team formation.
@@ -31,7 +31,7 @@ export default function Page() {
         These pages were designed with both usability and scalability in mind, ensuring participants could easily form teams and judges could track project details.
         The project required close collaboration with my teammates to integrate frontend and backend logic while maintaining a clean, maintainable codebase.
         
-        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
           Abstract:
         </div>
         A web-based hackathon judging and team submission platform built with Next.js and Prisma.

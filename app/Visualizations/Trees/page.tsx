@@ -9,11 +9,11 @@ export default function Page() {
 
       <div className="text-4xl pt-5 pb-5"> Procedural Tree Generation </div>
       {/* <Link href="https://github.com/abobich675/Ribbit-Royale" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-        <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
+        <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' />
       </Link> */}
 
       <ImageColumn images={["/Tree-Gen/1.png", "/Tree-Gen/2.png", "/Tree-Gen/3.png"]}>
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         This project explores procedural content generation by creating randomized trees using a branching algorithm inspired by mathematic fractal trees.
@@ -22,7 +22,7 @@ export default function Page() {
         After a number of generations, the branches terminate and generate leaves, resulting in varied and lifelike structures.
         Built in Unity, the project showcases how simple recursive logic combined with randomness can produce complex, realistic forms.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
           Abstract:
         </div>
         This project investigates how simple recursive systems, when combined with adjustable randomness, can create visually rich structures.

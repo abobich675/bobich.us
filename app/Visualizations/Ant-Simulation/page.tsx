@@ -8,12 +8,12 @@ export default function Page() {
     <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Ant Simulation
 
     <div className="text-4xl pt-5 pb-5"> Ant Simulation </div>
-    <Link href="https://github.com/abobich675/AntSimulation" target="_blank" className='w-8 h-8 flex items-center justify-center'>
-      <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' />
+    <Link href="https://github.com/abobich675/AntSimulation" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+      <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
     </Link>
 
     <ImageColumn images={["/Ants/Slow.gif", "/Ants/Fast.gif"]}>
-      <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
+      <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
         Description:
       </div>
       This project implements a pheromone-based ant colony simulation utilizing GPU programming via Unity computer shaders (HLSL). The world is represented as a hexagonal grid, where each hex cell stores state information such as neighbor connections, pheromone levels, food values, and anthill markers.

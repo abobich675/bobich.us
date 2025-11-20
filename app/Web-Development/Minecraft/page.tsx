@@ -10,17 +10,17 @@ export default function Page() {
       <div className="text-4xl pt-5"> Minecraft Web Development Mod </div>
 
       <div className='flex'>
-        <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain' /></div>
+        <Link href="https://github.com/abobich675/Minecraft-Web-Development-Mod" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
         </Link>
 
-        <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-100'>
-          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain' /></div>
+        <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
         </Link>
       </div>
 
       <ImageColumn images={["/Minecraft-Web-Dev.png"]}>
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         A Fabric-based Minecraft mod that transforms the game into a live coding sandbox for web development.
@@ -38,7 +38,7 @@ export default function Page() {
         This mod serves as an interesting proof of concept that put my networking skills to the test.
         By combining low-level socket programming with Minecraft’s game mechanics, it challenged me to bridge the gap between in-game logic and real-world web protocols—resulting in a creative and technically rewarding project.
 
-        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-800'>
+        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
           Abstract:
         </div>
         A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting capabilities.

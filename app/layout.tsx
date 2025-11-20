@@ -1,6 +1,6 @@
+import DotCanvas from '@/components/DotCanvas';
 import './globals.css'
-import Image from 'next/image';
-import Link from 'next/link';
+import NavBar from '@/components/NavBar';
 
 export default function RootLayout({
   children,
@@ -10,26 +10,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Adam Bobich</title>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+      </head>
       <body>
-        <div className='h-15 w-full flex flex-row text-2xl'>
-          <Link href="/" className='flex'>
-            <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/icons/home.png" alt="Home" width={100} height={100} className='w-full h-full object-contain' />
-            </div>
-          </Link>
-          <Link href="/Resume" className='flex'>
-            <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/icons/resume.png" alt="Resume" width={100} height={100} className='w-full h-full object-contain' />
-            </div>
-          </Link>
-          <Link href="mailto:abobich675@gmail.com" className='flex'>
-            <div className='w-20 p-3 flex items-center hover:bg-gray-200 justify-center'>
-              <Image src="/icons/email.png" alt="email" width={100} height={100} className='w-full h-full object-contain' />
-            </div>
-          </Link>
+        <div className='fixed -z-10'>
+          <DotCanvas xSpacing={30} ySpacing={30} baseRadius={0.25} maxRadius={1} baseOpacity={0.3} maxOpacity={0.7} color={"#006622"}
+          glowColor='40, 20, 80' glowMagnitude={400} mouseRadius={600} lagSpeed={0.035}/>
         </div>
 
-        <div className='bg-blue w-full h-1' />
+        <NavBar />
           
         {children}
       </body>
