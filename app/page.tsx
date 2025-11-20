@@ -16,8 +16,8 @@ export default function Page() {
           <TextTypeDelete
             constText={"Hi! I'm "}
             typeText={["a programmer.", "a game developer.", "a student.", "Adam."]}
-            fontSize='25px'
-            cursorHeight='25px'
+            fontSize='20px'
+            cursorHeight='20px'
             cursorWidth='1.5px'
             cursorColor='var(--accent-color)'
             textAlign='left'

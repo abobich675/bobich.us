@@ -22,7 +22,7 @@ export default function RootLayout({
 
         <NavBar />
         
-        <div className='pt-20 sm:pt-0'>
+        <div className='pt-15'>
           {children}
         </div>
       </body>
