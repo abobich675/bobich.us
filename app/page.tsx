@@ -11,7 +11,7 @@ export default function Page() {
   <>
     <div className='flex w-350 gap-10 pl-10 pr-230 sm:pr-195 md:pr-160 lg:pl-10 lg:pr-100 xl:px-50 pt-20'>
       <div className='flex-2'>
-        ABOUT ME
+        <h1>ABOUT ME</h1>
         <div className='block lg:hidden pt-5'>
           <TextTypeDelete
             constText={"Hi! I'm "}
@@ -96,7 +96,7 @@ export default function Page() {
 
 
     <div className='px-10 xl:px-50 py-20'>
-      <div className='py-10'>WORK EXPERIENCE</div>
+      <h1 className='py-10'>WORK EXPERIENCE</h1>
       <LinkedList
         colors={["#9966ee", "#7766ff", "#5544ff"]}
         items={[
@@ -137,7 +137,7 @@ export default function Page() {
     </div>
 
     <div className='px-10 xl:px-50 pb-20'>
-      <div className='py-5'>CURRENT PROJECTS</div>
+      <h1 className='py-5'>CURRENT PROJECTS</h1>
 
       <Entry name="ASCII Art Generator"
       type={2}

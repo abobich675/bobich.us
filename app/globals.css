@@ -51,6 +51,11 @@ body {
   font-family: Georgia, Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-family: 'Roboto';
+  letter-spacing: 1.5px;
+}
+
 .bg-red {
   background-color: #dd3e3e;
 }
@@ -77,4 +82,19 @@ body {
 
 .border-blue {
   border-color: #88d6ff;
+}
+
+@keyframes fade-in-corner {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, -20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.fade-in-corner {
+  animation: fade-in-corner 3s ease-out forwards;
 }
