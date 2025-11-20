@@ -20,7 +20,7 @@ export default function PortfolioDropdown({
             </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="rounded-none" align="start">
-            <GlassCard className="border border-white/20">
+            <GlassCard className="border border-white/20" blurAmount={0.3}>
                 <Link href="/Portfolio">
                     <DropdownMenuItem className="hover:bg-white/10 px-2 py-1 focus:outline-none focus:ring-0 focus:border-0">
                         <h1>ALL PROJECTS</h1>
