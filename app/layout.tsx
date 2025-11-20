@@ -21,8 +21,10 @@ export default function RootLayout({
         </div>
 
         <NavBar />
-          
-        {children}
+        
+        <div className='pt-20 sm:pt-0'>
+          {children}
+        </div>
       </body>
     </html>
   )

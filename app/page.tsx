@@ -8,7 +8,7 @@ import WorkExperience from '@/components/WorkExperience'
 export default function Page() {
 
   return(
-  <div className='w-full max-w-7xl mx-auto overflow-hidden gap-10 px-10 xl:px-50 pt-20'>
+  <div className='w-full max-w-7xl mx-auto overflow-hidden gap-10 px-10 xl:px-50 pt-10'>
     <div className='flex gap-10'>
       <div className='flex-2'>
         <h1>ABOUT ME</h1>
