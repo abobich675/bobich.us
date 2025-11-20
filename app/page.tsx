@@ -70,10 +70,10 @@ export default function Page() {
             "Web Development", "Game Development", "Parallel Programming", "GPU Programming"].map((skill, index) => {
             return (
               <span
-                key={index}
-                className='py-0.5 px-2 mr-1 text-sm border border-white/20 bg-white/5 rounded-full'>
-                  {skill}
-                </span>
+              key={index}
+              className='py-0.5 px-2 mr-1 text-[0.6rem] sm:text-sm border border-white/20 bg-white/5 rounded-full'>
+                {skill}
+              </span>
             )
           })}
         </div>
