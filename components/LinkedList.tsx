@@ -21,7 +21,6 @@ const LinkedList = ({ items, colors}: LinkedListProps) => {
                         </div>
                     </div>
                 )
-
             })}
         </div>
     )

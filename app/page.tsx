@@ -8,7 +8,7 @@ import WorkExperience from '@/components/WorkExperience'
 export default function Page() {
 
   return(
-  <div className='w-full max-w-7xl mx-auto overflow-hidden gap-10 px-10 xl:px-50 pt-10'>
+  <div className='w-full max-w-7xl mx-auto overflow-hidden gap-10 px-10 xl:px-45 pt-10'>
     <div className='flex gap-10'>
       <div className='flex-2'>
         <h1>ABOUT ME</h1>
@@ -38,11 +38,11 @@ export default function Page() {
             typeTextColor='var(--accent-color)'>
           </TextTypeDelete>
         </div>
-        <div className='grid grid-cols-[30px_1fr] gap-2 items-center pb-5 text-gray-500'>
+        <div className='grid grid-cols-[30px_1fr] gap-2 items-center pb-5 text-gray-400'>
           <div className='w-6 h-6'><Image src="/icons/pin.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           <div>Based in San Carlos, California</div>
           <div className='w-6 h-4'><Image src="/icons/calendar.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
-          <div>21 Years Old</div>
+          <div>20 Years Old</div>
           <div className='w-6 h-5'><Image src="/icons/hat.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           <div>Pursuing a Bachelor's in Computer Science</div>
         </div>
