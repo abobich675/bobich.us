@@ -20,7 +20,7 @@ const WorkExperience = ({ company, title, start, stop, bullets}: WorkExperienceP
             <div className="text-3xl pt-4">
                 {title}
             </div>
-            <div className="text-gray-500">
+            <div className="text-gray-400">
                 {bullets.map((text, index) => {
                     return (
                         <div key={index} className="flex pt-4 gap-2">
