@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Entry from '@/components/Entry'
 import TextTypeDelete from '@/components/TextTypeDelete'
 import LinkedList from '@/components/LinkedList'
 import WorkExperience from '@/components/WorkExperience'
+import EntryList from '@/components/EntryList'
  
 export default function Page() {
 
@@ -137,31 +137,11 @@ export default function Page() {
     <div className='pb-20'>
       <h1 className='py-5'>CURRENT PROJECTS</h1>
 
-      <Entry name="ASCII Art Generator"
-      type={2}
-      link="/Visualizations/Artsii"
-      image="/Artsii/1.png"
-      technologies={["Python", "Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
-        A creative web app built in just 24 hours that transforms images into retro-style ASCII art.
-        This project features AI image generation, conversions from image to text-based renderings, and a communal gallery to share your creations.
-      </Entry>
-
-      <Entry name="Ant Simulation"
-      type={2}
-      link="/Visualizations/Ant-Simulation"
-      image="/Ants/1.png"
-      technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
-          A GPU-accelerated ant colony simulation powered by Unity compute shaders.
-          Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
-      </Entry>
-      <Entry name="Minecraft Web Development Mod"
-      type={2}
-      link="/Web-Development/Minecraft"
-      image="/Minecraft-Web-Dev-Site.png"
-      technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
-          A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting.
-          Leverages low-level socket programming, this mod establishes TCP connections from within the Minecraft game environment and allows players to serve real, custom websites from inside the game.
-      </Entry>
+      <EntryList entries={[
+        "ASCII",
+        "Ant",
+        "Minecraft"
+      ]} />
     </div>
   </div>
   )
