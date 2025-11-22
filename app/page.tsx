@@ -141,9 +141,9 @@ export default function Page() {
       type={2}
       link="/Visualizations/Artsii"
       image="/Artsii/1.png"
-      technologies={["Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
-        A creative web app built in just 24 hours that transforms AI-generated images into colorful, retro-style ASCII art.
-        Using Python for image analysis and a modern web frontend for interactivity, Artsii converts pixel data into text-based renderings and features a communal gallery where users can share their creations, blending childhood imagination with modern day technology.
+      technologies={["Python", "Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
+        A creative web app built in just 24 hours that transforms images into retro-style ASCII art.
+        This project features AI image generation, conversions from image to text-based renderings, and a communal gallery to share your creations.
       </Entry>
 
       <Entry name="Ant Simulation"
@@ -151,7 +151,7 @@ export default function Page() {
       link="/Visualizations/Ant-Simulation"
       image="/Ants/1.png"
       technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
-          A GPU-accelerated ant colony simulation powered by Unity compute shaders on a hexagonal grid.
+          A GPU-accelerated ant colony simulation powered by Unity compute shaders.
           Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
       </Entry>
       <Entry name="Minecraft Web Development Mod"
@@ -160,8 +160,7 @@ export default function Page() {
       image="/Minecraft-Web-Dev-Site.png"
       technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
           A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting.
-          This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
-          It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
+          Leverages low-level socket programming, this mod establishes TCP connections from within the Minecraft game environment and allows players to serve real, custom websites from inside the game.
       </Entry>
     </div>
   </div>
