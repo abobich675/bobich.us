@@ -62,7 +62,7 @@ export default function Page() {
       </div>
     </div>
 
-    <div className='flex gap-10 pt-20'>
+    <div className='flex gap-10 pt-10'>
       <div className='flex-2 pt-10 text-xl'>
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
