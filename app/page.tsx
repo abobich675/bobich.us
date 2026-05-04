@@ -67,7 +67,7 @@ export default function Page() {
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
           {["Python", "C", "C#", "Java", "Next.js", "HTML", "JavaScript", "OpenGL", "SQL", "Git",
-            "Web Development", "Game Development", "Parallel Programming", "GPU Programming"].map((skill, index) => {
+            "Machine Learning", "Web Development", "Game Development", "Parallel Programming", "GPU Programming"].map((skill, index) => {
             return (
               <span
               key={index}
@@ -104,7 +104,7 @@ export default function Page() {
             start="Jun 2025"
             stop="Present"
             bullets={[
-              "Contributed to technological infrastructure using Next.js + Prisma that scaled hackathon from 50 to 300+ participants, supporting submission and judging workflows for 1,000+ total participants",
+              "Contributed to technological infrastructure using Next.js + Prisma that scaled hackathon from 50 to 500+ participants, supporting submission and judging workflows for 10,000+ of page visitors",
               "Built 6 team management pages from scratch, implementing full workflows for team creation, browsing, profiles, and invite links that integrate with the platform's submission infrastructure",
               "Developed admin console enabling comprehensive user management, team oversight, and judge assignment to streamline hackathon operations"
             ]}

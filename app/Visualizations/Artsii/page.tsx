@@ -20,12 +20,6 @@ export default function Page() {
 
       <ImageColumn images={["/Artsii/HomeScreen.png", "/Artsii/1.png", "/Artsii/2.png"]}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
-          Website Link:
-        </div>
-        <Link href="https://artsii.design" target="_blank" className="text-xl text-(--accent-color) hover:text-[#8855f0] underline">artsii.design</Link>
-        <br /><br />
-
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         As part of the DubHacks 2025 24-hour hackathon, I worked on a two-person team to create Artsii, a creative web application that transforms AI-generated images into colorful, retro-style ASCII art.
