@@ -47,9 +47,9 @@ export default function Page() {
           <div>Pursuing a Bachelor's in Computer Science</div>
         </div>
         <div>
-          As a 3rd year student at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about software development, researching sustainable artificial intelligence, and developing innovative new systems that push the limits of what we thought possible.
+          As a senior at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about software development, researching sustainable artificial intelligence, and developing systems that push the limits of what we thought possible.
           <br/><br/>
-          Outside of the classroom, I enjoy developing video games, websites, and various tools to visualize abstract concepts.
+          Outside of the classroom, I enjoy developing video games, websites, and various tools that bring abstract concepts to life.
           Take a look at some of my projects below:
         </div>
       </div>
