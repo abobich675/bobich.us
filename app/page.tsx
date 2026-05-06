@@ -47,10 +47,10 @@ export default function Page() {
           <div>Pursuing a Bachelor's in Computer Science</div>
         </div>
         <div>
-          As a senior at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about software development, researching sustainable artificial intelligence, and developing systems that push the limits of what we thought possible.
+          As a senior at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about researching sustainable artificial intelligence and developing systems that push the limits of what we thought possible.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools that bring abstract concepts to life.
-          Take a look at some of my projects below:
+          Take a look at some of my projects!
         </div>
       </div>
       <div className='flex-1 hidden sm:flex items-center'>
@@ -104,9 +104,9 @@ export default function Page() {
             start="Jun 2025"
             stop="Present"
             bullets={[
-              "Contributed to technological infrastructure using Next.js + Prisma that scaled hackathon from 50 to 500+ participants, supporting submission and judging workflows for 10,000+ of page visitors",
+              "Contributed to technological infrastructure using Next.js + Prisma that scaled hackathon from 50 participants to 500+, supporting submission and judging workflows for 10,000+ of page visitors",
               "Built 6 team management pages from scratch, implementing full workflows for team creation, browsing, profiles, and invite links that integrate with the platform's submission infrastructure",
-              "Developed admin console enabling comprehensive user management, team oversight, and judge assignment to streamline hackathon operations"
+              "Developed admin console, enabling comprehensive user management, team oversight, and judge assignment to streamline hackathon operations"
             ]}
           />,
           <WorkExperience
@@ -115,7 +115,7 @@ export default function Page() {
             start="Apr 2025"
             stop="Jul 2025"
             bullets={[
-              "Constructed web page and animations for Charisma's \"CharismaBot,\" a conversational AI system",
+              "Constructed webpage and animations for Charisma's \"CharismaBot,\" a conversational AI system",
               "Developed Python middleware to bridge AI backend and frontend using WebSocket communication",
               "Implemented multi-threaded architecture ensuring responsive user experience during AI processing"
             ]}
@@ -126,7 +126,7 @@ export default function Page() {
             start="Jun 2022"
             stop="Jun 2023"
             bullets={[
-              "Programmed interactive content for 9+ Norton textbooks using reaching tens of thousands of students across dozens of universities",
+              "Programmed interactive content for 9+ Norton textbooks, reaching tens of thousands of students across dozens of universities",
               "Engineered web features, QA, and DevOps for 20+ interactive chapters using Ruby and React"
             ]}
           />
