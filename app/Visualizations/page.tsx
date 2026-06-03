@@ -7,8 +7,7 @@ export default function Page() {
       <PortfolioDropdown value='VISUALIZATIONS' />
 
       <EntryList entries={[
-        "ASCII",
-        "Ant",
+        "Wildfires",
         "Rhombus Tiling",
         "Tree Generation",
         "Graph Visualization"

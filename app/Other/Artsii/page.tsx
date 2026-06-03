@@ -5,7 +5,7 @@ import ImageColumn from '@/components/ImageColumn'
 export default function Page() {
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
-      <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Artsii
+      <Link href="/Other" className='text-gray-500'> Other </Link> / Artsii
 
       <div className="text-4xl pt-5"> ASCII Art Generator </div>
 

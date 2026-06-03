@@ -9,7 +9,7 @@ import { ChevronDown } from 'lucide-react';
 export default function PortfolioDropdown({
   value = "ALL PROJECTS",
 }: {
-  value?: "ALL PROJECTS" | "WEBSITES" | "GAMES" | "VISUALIZATIONS";
+  value?: "ALL PROJECTS" | "MACHINE LEARNING" | "WEBSITES" | "GAMES" | "VISUALIZATIONS" | "OTHER";
 }) {
   return (
     <DropdownMenu>
@@ -26,6 +26,11 @@ export default function PortfolioDropdown({
                         <h1>ALL PROJECTS</h1>
                     </DropdownMenuItem>
                 </Link>
+                <Link href="/Machine-Learning">
+                    <DropdownMenuItem className="hover:bg-white/10 px-2 py-1 focus:outline-none focus:ring-0 focus:border-0">
+                        <h1>MACHINE LEARNING</h1>
+                    </DropdownMenuItem>
+                </Link>
                 <Link href="/Web-Development">
                     <DropdownMenuItem className="hover:bg-white/10 px-2 py-1 focus:outline-none focus:ring-0 focus:border-0">
                         <h1>WEBSITES</h1>
@@ -39,6 +44,11 @@ export default function PortfolioDropdown({
                 <Link href="/Visualizations">
                     <DropdownMenuItem className="hover:bg-white/10 px-2 py-1 focus:outline-none focus:ring-0 focus:border-0">
                         <h1>VISUALIZATIONS</h1>
+                    </DropdownMenuItem>
+                </Link>
+                <Link href="/Other">
+                    <DropdownMenuItem className="hover:bg-white/10 px-2 py-1 focus:outline-none focus:ring-0 focus:border-0">
+                        <h1>OTHER</h1>
                     </DropdownMenuItem>
                 </Link>
             </GlassCard>

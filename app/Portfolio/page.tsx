@@ -7,6 +7,10 @@ export default function Page() {
             <PortfolioDropdown />
 
             <EntryList entries={[
+                "MI Attack",
+                "Algorithmic Trading",
+                "Wildfires",
+                "PGD",
                 "Hackathon",
                 "ASCII",
                 "Ant",

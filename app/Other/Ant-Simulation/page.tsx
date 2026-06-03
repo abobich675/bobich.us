@@ -5,7 +5,7 @@ import ImageColumn from '@/components/ImageColumn'
 export default function Page() {
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
-    <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Ant Simulation
+    <Link href="/Other" className='text-gray-500'> Other </Link> / Ant Simulation
 
     <div className="text-4xl pt-5 pb-5"> Ant Simulation </div>
     <Link href="https://github.com/abobich675/AntSimulation" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>

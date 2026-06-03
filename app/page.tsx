@@ -42,9 +42,9 @@ export default function Page() {
           <div className='w-6 h-6'><Image src="/icons/pin.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
           <div>Based in San Carlos, California</div>
           <div className='w-6 h-4'><Image src="/icons/calendar.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
-          <div>20 Years Old</div>
+          <div>21 Years Old</div>
           <div className='w-6 h-5'><Image src="/icons/hat.png" alt='resume' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /> </div>
-          <div>Pursuing a Bachelor's in Computer Science</div>
+          <div>Pursuing a Master's in Artificial Intelligence</div>
         </div>
         <div>
           As a senior at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about researching sustainable artificial intelligence and developing systems that push the limits of what we thought possible.
@@ -66,8 +66,8 @@ export default function Page() {
       <div className='flex-2 pt-10 text-xl'>
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
-          {["Python", "C", "C#", "Java", "Next.js", "HTML", "JavaScript", "OpenGL", "SQL", "Git",
-            "Machine Learning", "Web Development", "Game Development", "Parallel Programming", "GPU Programming"].map((skill, index) => {
+          {["Machine Learning", "Web Development", "Game Development", "Parallel Programming", "GPU Programming",
+            "Python", "C", "C#", "Java", "Next.js", "HTML", "JavaScript", "OpenGL", "SQL", "Git"].map((skill, index) => {
             return (
               <span
               key={index}
@@ -138,9 +138,9 @@ export default function Page() {
       <h1 className='py-5'>CURRENT PROJECTS</h1>
 
       <EntryList entries={[
-        "ASCII",
-        "Ant",
-        "Minecraft"
+        "MI Attack",
+        "Algorithmic Trading",
+        "PGD"
       ]} />
     </div>
   </div>

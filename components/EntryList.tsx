@@ -1,6 +1,39 @@
 import Entry from "./Entry";
 
 const ENTRIES = {
+"MI Attack":
+    <Entry name="Membership Inference Attack"
+    link="Machine-Learning/MI-Attack"
+    image="/MI-Attack/2.png"
+    technologies={["Pytorch", "High Performance Computing", "SLURM"]}>
+        A replication of the landmark 2017 membership inference attack against machine learning models.
+        By training shadow models that mimic a target neural network, an attack classifier learns to distinguish members from non-members using only confidence vectors.
+    </Entry>,
+"Algorithmic Trading":
+    <Entry name="Algorithmic Trading Strategies"
+    link="Other/Algorithmic-Trading"
+    image="/Algorithmic-Trading.png"
+    technologies={["Python", "Docker", "Github"]}>
+        A suite of tools for building, tuning, and backtesting automated trading strategies.
+        The system allows configurable buy/sell rules to be composed into strategies and validated against historical market data.
+    </Entry>,
+"Wildfires":
+    <Entry name="Oregon Wildfires"
+    link="Visualizations/Wildfires"
+    image="/Wildfires/1.png"
+    technologies={["Gephi", "Matplotlib", "ArcGIS"]}>
+        A suite of tools for building, tuning, and backtesting automated trading strategies.
+        The system allows configurable buy/sell rules to be composed into strategies and validated against historical market data.
+    </Entry>,
+"PGD":
+    <Entry name="Projected Gradient Descent Attack"
+    link="Machine-Learning/PGD"
+    image="/PGD/1.png"
+    technologies={["Pytorch", "High Performance Computing", "SLURM"]}>
+        An implementation and analysis of PGD adversarial attacks on image classifiers.
+        By iteratively perturbing inputs within a bounded ε-ball, the attack reliably fools undefended models.
+        Training models on these attack-generated examples produces models robust to PGD with minimal clean accuracy sacrifice.
+    </Entry>,
 "Hackathon":
     <Entry name="Hackathon Judging Platform"
     link="/Web-Development/Beaverhacks"
@@ -11,7 +44,7 @@ const ENTRIES = {
     </Entry>,
 "ASCII":
     <Entry name="ASCII Art Generator"
-    link="/Visualizations/Artsii"
+    link="/Other/Artsii"
     image="/Artsii/1.png"
     technologies={["Python", "Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
         A creative web app built in just 24 hours that transforms images into retro-style ASCII art.
@@ -19,7 +52,7 @@ const ENTRIES = {
     </Entry>,
 "Ant":
     <Entry name="Ant Simulation"
-    link="/Visualizations/Ant-Simulation"
+    link="/Other/Ant-Simulation"
     image="/Ants/1.png"
     technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
         A GPU-accelerated ant colony simulation powered by Unity compute shaders.
