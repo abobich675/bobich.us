@@ -6,15 +6,17 @@ type EntryProps = {
     type?: number;
     name: string;
     link?: string;
+    targetBlank?: boolean;
     image?: string;
     technologies?: string[];
     barColor?: string;
     children?: React.ReactNode;
   };
 
-const Entry = ({ type = 2, name, link, image, technologies, barColor, children}: EntryProps) => {
+const Entry = ({ type = 2, name, link, targetBlank = false, image, technologies, barColor, children}: EntryProps) => {
+    let content;
     if (type == 2) {
-        const content = (
+        content = (
         <div className={link ? 'hover:bg-white/2' : ''}>
             <div className='flex items-center gap-4 text-1xl md:text-2xl lg:text-3xl text-left p-5 pb-2'>
                 <strong>{name}</strong>
@@ -42,15 +44,8 @@ const Entry = ({ type = 2, name, link, image, technologies, barColor, children}:
             </div>
         </div>
         )
-        return link ? (
-            <Link href={link}>
-                {content}
-            </Link>
-        ) : (
-            content
-        );
     } else {
-        const content = (
+        content = (
         <div className={link ? 'hover:bg-white/2' : ''}>
             <div className={`h-1 ${barColor ? barColor : 'bg-gray-800'} w-full flex gap-4`}></div>
             
@@ -80,14 +75,14 @@ const Entry = ({ type = 2, name, link, image, technologies, barColor, children}:
             </div>
         </div>
         )
-        return link ? (
-            <Link href={link}>
-                {content}
-            </Link>
-        ) : (
-            content
-        );
     }
+    return link ? (
+        <Link href={link} target={targetBlank ? "_blank" : undefined}>
+            {content}
+        </Link>
+    ) : (
+        content
+    );
 };
 
 export default Entry;

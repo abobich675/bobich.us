@@ -22,9 +22,8 @@ export default function Page() {
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
           Abstract:
         </div>
-        An observational analysis of Oregon wildfire data from 2000-2025, visualized through networks, interactive county maps, and charts.
-        Fire frequency has remained broadly stable while acres burned has grown substantially, suggesting genuine increases in severity rather than improved detection.
-        Nearly three quarters of fires are human-caused, and uncertainty analysis shows causal predictions are weakest in low-count counties where sparse data limits confidence.
+        An observational analysis of Oregon wildfire data visualized through networks, interactive county maps, and charts.
+        Findings include that fire frequency has remained broadly stable while acres burned has grown substantially, suggesting genuine increases in severity rather than improved detection.
       </ImageColumn>
     </div>
   )

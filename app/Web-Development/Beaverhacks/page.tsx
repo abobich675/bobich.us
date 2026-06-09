@@ -10,14 +10,13 @@ export default function Page() {
       <div className="text-4xl pt-5"> Hackathon Judging Platform </div>
 
       <div className='flex'>
+        <Link href="https://beaverhacks.org/" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/link.png" alt='curseforge' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
+        </Link>
+
         <Link href="https://github.com/OregonStateHackathonClub/website" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
           <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
         </Link>
-
-        {/* TODO: Link to website itself */}
-        {/* <Link href="https://www.curseforge.com/minecraft/mc-mods/web-development" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
-          <div className='w-1/2 h-1/2'><Image src="/icons/curse.svg" alt='curseforge' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
-        </Link> */}
       </div>
 
       <ImageColumn images={["/Beaverhacks/1.png", "/Beaverhacks/2.png", "/Beaverhacks/3.png"]}>

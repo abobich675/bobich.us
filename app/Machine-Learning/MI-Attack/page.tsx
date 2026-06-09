@@ -9,9 +9,15 @@ export default function Page() {
 
       <div className="text-4xl pt-5"> Membership Inference Attack </div>
 
-      <Link href="https://github.com/JonahSutch/mi_attack_replication" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
-        <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
-      </Link>
+      <div className='flex'>
+        <Link href="https://github.com/JonahSutch/mi_attack_replication" target="_blank" className='w-12 h-12 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
+        </Link>
+
+        <Link href="https://drive.google.com/file/d/12tfoeG18NE39B-J5KW9Bp8mcClNzSso6/view?usp=sharing" target="_blank" className='w-12 h-12 p-2 flex items-center justify-center rounded-full hover:bg-(--accent-color)/25'>
+          <Image src="/icons/drive.png" alt='google drive' width={100} height={100} className='w-full h-full object-contain filter' />
+        </Link>
+      </div>
       
       <ImageColumn images={["/MI-Attack/1.png", "/MI-Attack/2.png", "/MI-Attack/3.png"]}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>

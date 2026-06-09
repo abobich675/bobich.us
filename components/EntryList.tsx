@@ -22,8 +22,8 @@ const ENTRIES = {
     link="Visualizations/Wildfires"
     image="/Wildfires/1.png"
     technologies={["Gephi", "Matplotlib", "ArcGIS"]}>
-        A suite of tools for building, tuning, and backtesting automated trading strategies.
-        The system allows configurable buy/sell rules to be composed into strategies and validated against historical market data.
+        An observational analysis of Oregon wildfire data visualized through networks, interactive county maps, and charts.
+        Findings include that fire frequency has remained broadly stable while acres burned has grown substantially, suggesting genuine increases in severity rather than improved detection.
     </Entry>,
 "PGD":
     <Entry name="Projected Gradient Descent Attack"
@@ -136,6 +136,7 @@ const ENTRIES = {
 "Bittner":
     <Entry name="Bittner Development Group"
     link="https://bittnerdev.com/"
+    targetBlank={true}
     image="/Bittner.png"
     technologies={["React", "Ruby", "HTML", "PCAT"]}>
         Working at the Bittner Development Group, I worked on interactive textbooks for clients.
