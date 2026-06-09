@@ -1,157 +1,29 @@
 import Entry from "./Entry";
+import { ENTRIES, ENTRY_ORDER, Category } from "@/data/entries";
 
-const ENTRIES = {
-"MI Attack":
-    <Entry name="Membership Inference Attack"
-    link="Machine-Learning/MI-Attack"
-    image="/MI-Attack/2.png"
-    technologies={["Pytorch", "High Performance Computing", "SLURM"]}>
-        A replication of the landmark 2017 membership inference attack against machine learning models.
-        By training shadow models that mimic a target neural network, an attack classifier learns to distinguish members from non-members using only confidence vectors.
-    </Entry>,
-"Algorithmic Trading":
-    <Entry name="Algorithmic Trading Strategies"
-    link="Other/Algorithmic-Trading"
-    image="/Algorithmic-Trading.png"
-    technologies={["Python", "Docker", "Github"]}>
-        A suite of tools for building, tuning, and backtesting automated trading strategies.
-        The system allows configurable buy/sell rules to be composed into strategies and validated against historical market data.
-    </Entry>,
-"Wildfires":
-    <Entry name="Oregon Wildfires"
-    link="Visualizations/Wildfires"
-    image="/Wildfires/1.png"
-    technologies={["Gephi", "Matplotlib", "ArcGIS"]}>
-        An observational analysis of Oregon wildfire data visualized through networks, interactive county maps, and charts.
-        Findings include that fire frequency has remained broadly stable while acres burned has grown substantially, suggesting genuine increases in severity rather than improved detection.
-    </Entry>,
-"PGD":
-    <Entry name="Projected Gradient Descent Attack"
-    link="Machine-Learning/PGD"
-    image="/PGD/1.png"
-    technologies={["Pytorch", "High Performance Computing", "SLURM"]}>
-        An implementation and analysis of PGD adversarial attacks on image classifiers.
-        By iteratively perturbing inputs within a bounded ε-ball, the attack reliably fools undefended models.
-        Training models on these attack-generated examples produces models robust to PGD with minimal clean accuracy sacrifice.
-    </Entry>,
-"Hackathon":
-    <Entry name="Hackathon Judging Platform"
-    link="/Web-Development/Beaverhacks"
-    image="/Beaverhacks/1.png"
-    technologies={["Next.js", "Prisma", "Typescript", "Figma"]}>
-        A web-based hackathon platform for judging and submission.
-        This project strengthened my skills in full-stack development, database integration, and building production-ready applications in a collaborative setting.
-    </Entry>,
-"ASCII":
-    <Entry name="ASCII Art Generator"
-    link="/Other/Artsii"
-    image="/Artsii/1.png"
-    technologies={["Python", "Next.js", "Google Cloud Services", "Google Gemini Imagen API"]}>
-        A creative web app built in just 24 hours that transforms images into retro-style ASCII art.
-        This project features AI image generation, conversions from image to text-based renderings, and a communal gallery to share your creations.
-    </Entry>,
-"Ant":
-    <Entry name="Ant Simulation"
-    link="/Other/Ant-Simulation"
-    image="/Ants/1.png"
-    technologies={["Unity", "Parallel Programming", "GPU Programming", "Compute Shaders (HLSL)"]}>
-        A GPU-accelerated ant colony simulation powered by Unity compute shaders.
-        Implemented pheromone dynamics with decay, diffusion, and reinforcement across multiple channels to enable large-scale, real-time trail formation and swarm behaviors.
-    </Entry>,
-"Minecraft":
-    <Entry name="Minecraft Web Development Mod"
-    link="/Web-Development/Minecraft"
-    image="/Minecraft-Web-Dev-Site.png"
-    technologies={["Java", "Java Socket Programming", "Minecraft Fabric API", "TCP/IP"]}>
-        A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting.
-        Leverages low-level socket programming, this mod establishes TCP connections from within the Minecraft game environment and allows players to serve real, custom websites from inside the game.
-    </Entry>,
-"CharismaBot":
-    <Entry name="CharismaBot Speaker-Listener Web AI"
-    link="https://github.com/imshrirangpatil/speaker-listener-web-ai"
-    image="/Charisma.png"
-    technologies={["Python", "Socketio Communication", "HTML", "JavaScript"]}>
-        CharismaBot is a conversational AI system that I helped build as undergraduate research with Charisma Robotics Lab.
-        It implements the Speaker-Listener Technique using voice input, emotion detection, and large language models.
-    </Entry>,
-"Ribbit Royale":
-    <Entry name="Ribbit Royale"
-    link="/Game-Development/Ribbit-Royale"
-    image="/Ribbit-Royale/Ribbit-Royale.jpeg"
-    technologies={["Unity Game Engine", ".NET Multiplayer Framework", "C# Programming Language"]}>
-        A cute, whimsical party game for friends to designed to bring players together through fun, competitive, and engaging multiplayer minigames.
-        Embrace your inner frog by swinging with your tongue, admiring other swamp animals, and evading dangerous snakes.
-    </Entry>,
-"Rhombus Tiling":
-    <Entry name="Rhombus Tiling"
-    link="/Visualizations/Rhombus-Tiling"
-    image="/Rhombus-Tiling/1.png"
-    technologies={["OpenGL"]}>
-        This project focuses on visualizing a mathematical concept involving rhombus tiling and rotation.
-        It demonstrates how a 2D representation of rhombuses can be interpreted as a 3D isometric arrangement of cubes.
-        By letting users interact with a 2D rhombuses, rotating groups of 3 rhombuses at a time, they can add or remove cubes from the 3D model in real time.
-    </Entry>,
-"Food Filter":
-    <Entry name="Food Filter"
-    link="https://foodfilter.onrender.com/"
-    image="/Food-Filter.png"
-    technologies={["Express.js", "Google Gemini API", "Node.js"]}>
-        For a 24 hour hackathon with 3 teammates, I helped create a web application to remove the clutter from bloated recipe websites.
-        No longer will you have to scroll through an endless feed of life stories, popup ads, and SEO-stuffed paragraphs just to find a list of ingredients.
-        Simply enter the url of a desired recipe and viola! All the important information with none of the excess.
-    </Entry>,
-"Tree Generation":
-    <Entry name="Tree Generation"
-    link="/Visualizations/Trees"
-    image="/Tree-Gen/1.png"
-    technologies={["Unity Game Engine", "C#"]}>
-        A tree generator which creates unique, randomized trees utilizing simple recursive systems.
-        By controlling factors like branching patterns and deviation angles, users can explore a spectrum from precise fractal trees to loose, natural forms.
-    </Entry>,
-"Graph Visualization":
-    <Entry name="Graph Visualization"
-    link="/Visualizations/Graphs"
-    image="/Graphs/1.png"
-    technologies={["Unity Game Engine", "C#"]}>
-        A physics-based simulation representing a graph data structure in both 2D and 3D spaces.
-        By balancing attractive and repulsive forces between nodes, the system dynamically organizes graphs into clear, coherent layouts.
-    </Entry>,
-"Pokemon":
-    <Entry name="Pokemon #00B6D5"
-    link="/Game-Development/Pokemon"
-    image="/Pokemon/Battle.png"
-    technologies={["Unity Game Engine", "C# Programming Language"]}>
-        Pokemon #00B6D5 is a one-on-one battle experience where players face off in a high-stakes Pokemon match against none other than the legendary alt-rock band Weezer.
-        Set in a nostalgic arena with a pixel-perfect vibe, the game blends strategic turn-based combat with absurd humor and band-themed easter eggs.
-    </Entry>,
-"2048":
-    <Entry name="2048 Rotate"
-    link="Game-Development/2048-Rotate"
-    image="/2048-Rotate.png"
-    technologies={["Unity Game Engine", "C# Programming Language"]}>
-        A relaxing puzzle experience where balls combine and grow when they touch.
-        Manipulate the balls by taking control of gravity itself and shoot for a new high score!
-        Inspired by popular games <i>2048</i> and <i>Suika Game</i>.
-    </Entry>,
-"Bittner":
-    <Entry name="Bittner Development Group"
-    link="https://bittnerdev.com/"
-    targetBlank={true}
-    image="/Bittner.png"
-    technologies={["React", "Ruby", "HTML", "PCAT"]}>
-        Working at the Bittner Development Group, I worked on interactive textbooks for clients.
-        I programmed interactive content for 9+ Norton textbooks using reaching tens of thousands of students across dozens of universities.
-        Engineered web features, QA, and DevOps for 20+ interactive chapters using Ruby and React.
-    </Entry>
-}
+const EntryList = ({entries, category}: {entries?: string[], category?: Category}) => {
 
-const EntryList = ({entries}: {entries: (keyof typeof ENTRIES)[]}) => {
+    let entryArray
+    if (entries) {
+        entryArray = entries.map(key => ENTRIES[key]);
+    } else {
+        entryArray = Object.values(ENTRIES)
+        entryArray = ENTRY_ORDER.map(key => ENTRIES[key]);
+    }
 
+    if (category)
+        entryArray = entryArray.filter(e => e.category === category);
 
     return (
-        entries.map((name, index) => {
-            return <div key={`${name}-${index}`}>{ENTRIES[name]}</div>
-        })
+        <>{
+            entryArray.map((entry, index) => {
+                return <div key={`${entry.name}-${index}`}>{
+                    <Entry {... entry}>
+                        {entry.abstract}
+                    </Entry>
+                    }</div>
+                })
+        }</>
     )
 };
 

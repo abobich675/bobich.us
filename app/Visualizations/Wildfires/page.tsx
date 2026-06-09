@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Wildfires"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Oregon Wildfires
@@ -12,18 +14,22 @@ export default function Page() {
         <Image src="/icons/drive.png" alt='google drive' width={100} height={100} className='w-full h-full object-contain filter' />
       </Link>
 
-      <ImageColumn images={["/Wildfires/1.png", "/Wildfires/2.png", "/Wildfires/3.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
         A data visualization project analyzing Oregon Department of Forestry wildfire data from 2000-2025.
         We examined whether Oregon's worsening wildfire problem reflects genuine severity increases or just better reporting, finding that while fire counts have stayed flat, acres burned has spiked dramatically, particularly in 2020.
         We used matplotlib for statistical charts, ArcGIS for interactive county maps with per-county cause breakdowns, and Gephi for a network graph mapping cause-county relationships weighted by certainty.
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        An observational analysis of Oregon wildfire data visualized through networks, interactive county maps, and charts.
-        Findings include that fire frequency has remained broadly stable while acres burned has grown substantially, suggesting genuine increases in severity rather than improved detection.
+        
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
     </div>
   )

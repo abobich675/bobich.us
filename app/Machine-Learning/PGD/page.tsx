@@ -1,14 +1,16 @@
 import Link from 'next/link'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["PGD"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Machine-Learning" className='text-gray-500'> Machine Learning </Link> / Projected Gradient Descent Attack
 
       <div className="text-4xl pt-5"> Projected Gradient Descent </div>
       
-      <ImageColumn images={["/PGD/1.png", "/PGD/2.png", "/PGD/3.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -16,12 +18,14 @@ export default function Page() {
         Finally, I defended both models using adversarial training, reducing the accuracy gap from ~45–65% down to just 2–13% with nearly no cost to clean accuracy.
         This project gave me hands-on experience with adversarial example crafting, robustness evaluation, and the practical tradeoffs between model utility and security.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        An implementation and analysis of PGD adversarial attacks on image classifiers.
-        By iteratively perturbing inputs within a bounded ε-ball, the attack reliably fools undefended models.
-        Training models on these attack-generated examples produces models robust to PGD with minimal clean accuracy sacrifice.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
 
         <br/>
         <br/>

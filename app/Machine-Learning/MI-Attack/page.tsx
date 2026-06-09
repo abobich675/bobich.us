@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["MI Attack"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Machine-Learning" className='text-gray-500'> Machine Learning </Link> / Membership Inference Attack
@@ -19,7 +21,7 @@ export default function Page() {
         </Link>
       </div>
       
-      <ImageColumn images={["/MI-Attack/1.png", "/MI-Attack/2.png", "/MI-Attack/3.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -36,11 +38,14 @@ export default function Page() {
         My fix was to train a dedicated set of attack models per target size, with shadow models matched to the same training size as the target.
         This produced attack classifiers tuned to the specific overfitting behavior of each target, improving precision by up to 7% over the baseline approach.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        A replication of the landmark 2017 membership inference attack against machine learning models.
-        By training shadow models that mimic a target neural network, an attack classifier learns to distinguish members from non-members using only confidence vectors.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
     </div>
   )

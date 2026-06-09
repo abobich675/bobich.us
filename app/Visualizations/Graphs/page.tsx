@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Graph Visualization"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
     <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Graphs
@@ -12,7 +14,7 @@ export default function Page() {
       <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' />
     </Link> */}
 
-    <ImageColumn images={["/Graphs/1.png", "/Graphs/3D.gif"]}>
+    <ImageColumn images={entry.images}>
       <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
         Description:
       </div>
@@ -21,12 +23,14 @@ export default function Page() {
       The system supports both 2D and 3D visualizations, allowing graphs to settle naturally into clear, spatially intuitive forms.
       Built in Unity, the project demonstrates how simple physical simulations can be used to organize and reveal the underlying structure of complex data in multiple dimensions.
 
-      <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-        Abstract:
-      </div>
-      This project explores how physics-based simulations can be applied to graph visualization in both 2D and 3D spaces.
-      By balancing attractive and repulsive forces between nodes, the system dynamically organizes graphs into clear, coherent layouts.
-      The approach highlights how simple physical rules can reveal structure and relationships within complex networks.
+      { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
     </ImageColumn>
   </div>
   )

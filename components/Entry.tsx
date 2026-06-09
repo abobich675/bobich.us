@@ -7,14 +7,18 @@ type EntryProps = {
     name: string;
     link?: string;
     targetBlank?: boolean;
-    image?: string;
+    images?: string[];
+    displayImage?: string;
     technologies?: string[];
     barColor?: string;
     children?: React.ReactNode;
   };
 
-const Entry = ({ type = 2, name, link, targetBlank = false, image, technologies, barColor, children}: EntryProps) => {
+const Entry = ({ type = 2, name, link, targetBlank = false, images = [], displayImage, technologies, barColor, children}: EntryProps) => {
     let content;
+    if (!displayImage) {
+        displayImage = images[0] ? images[0] : "/temp.png"
+    }
     if (type == 2) {
         content = (
         <div className={link ? 'hover:bg-white/2' : ''}>
@@ -38,7 +42,7 @@ const Entry = ({ type = 2, name, link, targetBlank = false, image, technologies,
                         </div>
                     )}
                     <div className='flex-3 flex justify-end pr-5 pb-5'>
-                        {image && <Image src={image} alt={"Image"} width={200} height={200} className="rounded-md w-full h-full object-contain" /> }
+                        {<Image src={displayImage} alt={"Image"} width={200} height={200} className="rounded-md w-full h-full object-contain" /> }
                     </div>
                 </div>
             </div>
@@ -69,7 +73,7 @@ const Entry = ({ type = 2, name, link, targetBlank = false, image, technologies,
                         </div>
                     )}
                     <div className='flex-2 flex justify-end'>
-                        {image && <Image src={image} alt={"Image"} width={200} height={200} className="rounded-md w-full h-full object-contain" /> }
+                        {<Image src={displayImage} alt={"Image"} width={200} height={200} className="rounded-md w-full h-full object-contain" /> }
                     </div>
                 </div>
             </div>

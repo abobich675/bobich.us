@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Tree Generation"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Visualizations" className='text-gray-500'> Visualizations </Link> / Procedural Tree Generation
@@ -12,7 +14,7 @@ export default function Page() {
         <Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' />
       </Link> */}
 
-      <ImageColumn images={["/Tree-Gen/1.png", "/Tree-Gen/2.png", "/Tree-Gen/3.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -22,12 +24,14 @@ export default function Page() {
         After a number of generations, the branches terminate and generate leaves, resulting in varied and lifelike structures.
         Built in Unity, the project showcases how simple recursive logic combined with randomness can produce complex, realistic forms.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        This project investigates how simple recursive systems, when combined with adjustable randomness, can create visually rich structures.
-        By controlling factors like branching patterns and deviation angles, users can explore a spectrum from precise fractal trees to loose, nature-inspired forms.
-        The result highlights the balance between mathematical precision and organic unpredictability in procedural generation.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
     </div>
   )

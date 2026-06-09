@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Ant"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
     <Link href="/Other" className='text-gray-500'> Other </Link> / Ant Simulation
@@ -12,7 +14,7 @@ export default function Page() {
       <div className='w-1/2 h-1/2'><Image src="/icons/github.png" alt='github' width={100} height={100} className='w-full h-full object-contain filter brightness-0 invert' /></div>
     </Link>
 
-    <ImageColumn images={["/Ants/Slow.gif", "/Ants/Fast.gif"]}>
+    <ImageColumn images={entry.images}>
       <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
         Description:
       </div>
@@ -29,6 +31,15 @@ export default function Page() {
       
       <br/>
       The GPU compute shader executes these updates in parallel across all hexes, writing results into an updated buffer each frame. This enables large-scale, real-time simulations of pheromone trails that ants can later use for navigation and decision-making.
+    
+      { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
     </ImageColumn>
   </div>
   )

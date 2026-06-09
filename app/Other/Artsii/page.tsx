@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["ASCII"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Other" className='text-gray-500'> Other </Link> / Artsii
@@ -18,7 +20,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <ImageColumn images={["/Artsii/HomeScreen.png", "/Artsii/1.png", "/Artsii/2.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -30,11 +32,14 @@ export default function Page() {
         My main responsibilities included integrating the AI image generation API and connecting the subsystems split between multiple programs and languages.
         The project pushed us to find the right balance between creativity and technical precision, as we worked to optimize performance and image quality, all within the 24-hour timeframe.
         
-        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        A creative web app built in just 24 hours that transforms AI-generated images into colorful, retro-style ASCII art.
-        Using Python for image analysis and a modern web frontend for interactivity, Artsii converts pixel data into text-based renderings and features a communal gallery where users can share their creations, blending childhood imagination with modern day technology.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
 
     </div>

@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Minecraft"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Web-Development" className='text-gray-500'> Web Development </Link> / Minecraft Web Development Mod
@@ -19,7 +21,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <ImageColumn images={["/Minecraft-Web-Dev.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -38,13 +40,14 @@ export default function Page() {
         This mod serves as an interesting proof of concept that put my networking skills to the test.
         By combining low-level socket programming with Minecraft’s game mechanics, it challenged me to bridge the gap between in-game logic and real-world web protocols—resulting in a creative and technically rewarding project.
 
-        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        A Fabric Mod for Minecraft that enables in-game TCP networking and web hosting capabilities.
-        This mod leverages low-level socket programming to establish direct TCP connections from within the Minecraft game environment.
-        It allows players or server administrators to serve custom HTML-based websites directly from the game itself—without needing any external web server.
-        More than just a networking tool, it acts as a visual and interactive proof of concept—designed to help you understand the fundamentals of web development by rendering HTML elements like divs and spans as physical blocks within the game world.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
 
     </div>

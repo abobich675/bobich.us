@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["2048"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Game-Development" className='text-gray-500'> Game Development </Link> / 2048 Rotate
@@ -13,7 +15,7 @@ export default function Page() {
         <div className='w-1/2 h-1/2'><Image src="/icons/play.png" alt='play' width={100} height={100} className='w-full h-full object-contain filter' /></div>
       </Link>
       
-      <ImageColumn images={["/2048-Rotate.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -22,12 +24,14 @@ export default function Page() {
         Players control gravity in four directions to guide movement and create high-scoring combinations.
         This game helped me build a strong foundation in Unity physics, game logic, and designing engaging solo gameplay loops.
 
-        <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        A fun, relaxing puzzle experience where balls sizes combine when they touch each other.
-        Manipulate the balls by taking control of gravity itself.
-        As balls continue to collide, they merge into larger balls, creating opportunities for higher scores.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
     </div>
   )

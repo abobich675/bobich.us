@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageColumn from '@/components/ImageColumn'
+import { ENTRIES } from '@/data/entries'
  
 export default function Page() {
+  const entry = ENTRIES["Hackathon"]
   return(
     <div className='p-5 sm:p-12.5 lg:p-20 pt-5 sm:pt-5 lg:pt-5 pr-0 sm:pr-0 lg:pr-0'>
       <Link href="/Web-Development" className='text-gray-500'> Web Development </Link> / Hackathon Judging Platform
@@ -19,7 +21,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <ImageColumn images={["/Beaverhacks/1.png", "/Beaverhacks/2.png", "/Beaverhacks/3.png"]}>
+      <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
         </div>
@@ -30,12 +32,14 @@ export default function Page() {
         These pages were designed with both usability and scalability in mind, ensuring participants could easily form teams and judges could track project details.
         The project required close collaboration with my teammates to integrate frontend and backend logic while maintaining a clean, maintainable codebase.
         
-        <div className='text-lg lg:text-2xl pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
-          Abstract:
-        </div>
-        A web-based hackathon judging and team submission platform built with Next.js and Prisma.
-        I contributed primarily to the website's team pages, including team creation, discovery, profiles, and invite link functionality.
-        This project strengthened my skills in full-stack development, database integration, and building production-ready applications in a collaborative setting.
+        { entry.abstract &&
+          <>
+            <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 pt-3 lg:pt-5 text-gray-200'>
+              Abstract:
+            </div>
+            {entry.abstract}
+          </>
+        }
       </ImageColumn>
 
     </div>
