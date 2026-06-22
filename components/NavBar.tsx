@@ -1,14 +1,14 @@
 "use client"
-import {GlassCard} from '@developer-hub/liquid-glass'
 import { ButtonGroup } from './ui/button-group';
 import { Button } from './ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import Glass from './Glass';
 
 const NavBar = () => {
   return (
     <div className='fixed left-1/2 transform -translate-x-1/2 translate-y-2/2 z-15'>
-        <GlassCard className='scale-75 sm:scale-100' cornerRadius={1000}>
+        <Glass className='scale-75 sm:scale-100' cornerRadius={1000}>
             <ButtonGroup className='border border-white/20 rounded-full'>
                 <Link href="/">
                     <Button className='hover:bg-white/10 rounded-l-full rounded-r-none'>
@@ -35,7 +35,7 @@ const NavBar = () => {
                     </Button>
                 </Link>
             </ButtonGroup>
-        </GlassCard>
+        </Glass>
     </div>
   );
 };
