@@ -4,6 +4,7 @@
   --background: #111111;
   --primary-text-color: var(--color-gray-300);
   --accent-color: #9966ee;
+  --hover-color: #8855f0;
 }
 
 @theme inline {

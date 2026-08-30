@@ -20,6 +20,12 @@ export default function Page() {
         </Link>
       </div>
 
+      <div className='mt-5 text-2xl text-(--accent-color) hover:text-(--hover-color)'>
+        <Link href="https://artsii.bobich.us" target="_blank">
+          <u>artsii.bobich.us</u>
+        </Link>
+      </div>
+
       <ImageColumn images={entry.images}>
         <div className='text-lg lg:text-2xl pb-3 sm:pb-3 lg:pb-5 text-gray-200'>
           Description:
