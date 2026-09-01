@@ -47,7 +47,10 @@ export default function Page() {
           <div>Pursuing a Master's in Artificial Intelligence</div>
         </div>
         <div>
-          As a senior at Oregon State University studying Computer Science and Artificial Intelligence, I'm passionate about researching sustainable artificial intelligence and developing systems that push the limits of what we thought possible.
+          As a Master's student at Oregon State University studying Artificial Intelligence, I'm passionate about researching sustainable AI and developing systems that push the limits of what we thought possible.
+          AI is the future, but first we need to reduce it's environmental footprint and quit stealing so much training data.
+          There's still a lot to improve and I'm excited to be there on the front lines.
+
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools that bring abstract concepts to life.
           Take a look at some of my projects!
@@ -67,7 +70,7 @@ export default function Page() {
         Skills
         <div className='flex flex-wrap gap-2 mt-5'>
           {["Machine Learning", "Web Development", "Game Development", "Parallel Programming", "GPU Programming",
-            "Python", "C", "C#", "Java", "Next.js", "HTML", "JavaScript", "OpenGL", "SQL", "Git"].map((skill, index) => {
+            "Python", "C", "C#", "Java", "Next.js", "Linux", "HTML", "JavaScript", "OpenGL", "SQL", "Git"].map((skill, index) => {
             return (
               <span
               key={index}
@@ -101,8 +104,8 @@ export default function Page() {
           <WorkExperience
             company="Beaverhacks"
             title="Software Engineer"
-            start="Jun 2025"
-            stop="Present"
+            start="June 2025"
+            stop="Sept 2026"
             bullets={[
               "Contributed to technological infrastructure using Next.js + Prisma that scaled hackathon from 50 participants to 500+, supporting submission and judging workflows for 10,000+ of page visitors",
               "Built 6 team management pages from scratch, implementing full workflows for team creation, browsing, profiles, and invite links that integrate with the platform's submission infrastructure",
@@ -113,7 +116,7 @@ export default function Page() {
             company="Charisma Robotics Lab"
             title="Undergraduate Developer Researcher"
             start="Apr 2025"
-            stop="Jul 2025"
+            stop="July 2025"
             bullets={[
               "Constructed webpage and animations for Charisma's \"CharismaBot,\" a conversational AI system",
               "Developed Python middleware to bridge AI backend and frontend using WebSocket communication",
@@ -123,8 +126,8 @@ export default function Page() {
           <WorkExperience
             company="Bittner Development Group"
             title="Developer Intern"
-            start="Jun 2022"
-            stop="Jun 2023"
+            start="June 2022"
+            stop="June 2023"
             bullets={[
               "Programmed interactive content for 9+ Norton textbooks, reaching tens of thousands of students across dozens of universities",
               "Engineered web features, QA, and DevOps for 20+ interactive chapters using Ruby and React"
@@ -138,6 +141,7 @@ export default function Page() {
       <h1 className='py-5'>CURRENT PROJECTS</h1>
 
       <EntryList entries={[
+        "Dedicated Server",
         "MI Attack",
         "Algorithmic Trading",
         "PGD"

@@ -12,6 +12,7 @@ export type EntryData = {
 };
 
 export const ENTRY_ORDER = [
+    "Dedicated Server",
     "MI Attack",
     "Algorithmic Trading",
     "Wildfires",
@@ -32,6 +33,17 @@ export const ENTRY_ORDER = [
 ] as const;
 
 export const ENTRIES: Record<string, EntryData> = {
+"Dedicated Server":
+{
+    name: "Dedicated Server Hosting",
+    link: "Other/Dedicated-Server",
+    images: ["/Server/1.png",  "/Server/Immich4.png"],
+    displayImage: "/Server/1.png",
+    technologies: ["Linux", "Docker", "Nginx Proxy Manager", "Tailscale"],
+    abstract: "A self-hosted dedicated server built on Ubuntu, managed using CasaOS. \
+        The server hosts a variety of services including Nginx Proxy Manager, Tailscale, and some personal projects highlighted in my portfolio such as Artsii.",
+    category: "Other"
+},
 "MI Attack":
 {
     name: "Membership Inference Attack",
