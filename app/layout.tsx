@@ -3,6 +3,7 @@ import './globals.css'
 import NavBar from '@/components/NavBar';
 import { Analytics } from "@vercel/analytics/next";
 import Head from './head';
+import HexagonCanvas from '@/components/HexagonCanvas';
 
 export default function RootLayout({
   children,
@@ -16,8 +17,10 @@ export default function RootLayout({
         <Head />
         <div className='fixed -z-10'>
           <Analytics />
-          <DotCanvas xSpacing={30} ySpacing={30} baseRadius={0.25} maxRadius={1} baseOpacity={0.3} maxOpacity={0.8} color={"#006622"}
-          glowColor='40, 20, 80' glowMagnitude={400} mouseRadius={600} lagSpeed={0.035}/>
+          {/* <DotCanvas xSpacing={30} ySpacing={30} baseRadius={0.25} maxRadius={1} baseOpacity={0.3} maxOpacity={0.8}
+          color={"#006622"} glowColor='40, 20, 80' glowMagnitude={400} mouseRadius={600} lagSpeed={0.035}/> */}
+          <HexagonCanvas size={50} offset={0} baseOpacity={0.03} maxOpacity={0.2} color={"#006622"}
+          glowColor='40, 20, 80' glowMagnitude={0} mouseRadius={600} lagSpeed={0.035}/>
         </div>
 
         <NavBar />
