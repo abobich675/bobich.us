@@ -23,7 +23,8 @@ export default function HexagonCanvas({
   mouseRadius?: number;
   lagSpeed?: number;
 }) {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const bottomCanvasRef = useRef<HTMLCanvasElement | null>(null);
+  const topCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const targetMouseRef = useRef<{ x: number; y: number } | null>(null);
   const displayMouseRef = useRef<{ x: number; y: number } | null>(null);
 
@@ -83,6 +84,8 @@ export default function HexagonCanvas({
       const dist = Math.sqrt(dx * dx + dy * dy);
       const influence = Math.max(0, 1 - dist / mouseRadius);
       alpha = baseOpacity + influence * (maxOpacity - baseOpacity);
+    } else {
+      alpha = (baseOpacity * 2 + maxOpacity * 1) / 3;
     }
 
     ctx.beginPath();
@@ -107,7 +110,7 @@ export default function HexagonCanvas({
   }
 
   useEffect(() => {
-    const canvas = canvasRef.current;
+    const canvas = bottomCanvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
@@ -187,17 +190,31 @@ export default function HexagonCanvas({
   ]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        display: "block",
-        width: "100vw",
-        height: "100vh",
-        position: "fixed",
-        top: 0,
-        left: 0,
-        zIndex: -1,
-      }}
-    />
+    <div>
+      <canvas
+        ref={bottomCanvasRef}
+        style={{
+          display: "block",
+          width: "100vw",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: -1,
+        }}
+      />
+      <canvas
+        ref={topCanvasRef}
+        style={{
+          display: "block",
+          width: "100vw",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 10,
+        }}
+      />
+    </div>
   );
 }
