@@ -1,11 +1,11 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, Suspense, useContext, useEffect, useState } from "react";
 
 export const AnimationContext = createContext<[number, React.Dispatch<React.SetStateAction<number>>] | undefined>(undefined);
 
-export const AnimationContextProvider = (props: any)=>{
+export const AnimationContextProviderClient = ({ children }: { children: React.ReactNode }) =>{
     const [animationState, setAnimationState] = useState(0);
     const pathname = usePathname();
     const searchParams = useSearchParams()
@@ -18,9 +18,17 @@ export const AnimationContextProvider = (props: any)=>{
     }, [pathname, searchParams]);
 
     return(
-        <AnimationContext.Provider value={[animationState, setAnimationState]}>
-            {props.children}
-        </AnimationContext.Provider>
+      <AnimationContext.Provider value={[animationState, setAnimationState]}>
+        {children}
+      </AnimationContext.Provider>
+    )
+}
+
+export const AnimationContextProvider = ({ children }: { children: React.ReactNode })=>{
+  return(
+      <Suspense>
+        <AnimationContextProviderClient> {children} </AnimationContextProviderClient>
+      </Suspense>
     )
 }
 
