@@ -48,9 +48,7 @@ export default function Page() {
         </div>
         <div>
           As a Master's student at Oregon State University studying Artificial Intelligence, I'm passionate about researching sustainable AI and developing systems that push the limits of what we thought possible.
-          AI is the future, but first we need to reduce it's environmental footprint and quit stealing so much training data.
-          There's still a lot to improve and I'm excited to be there on the front lines.
-
+          I'm especially interested in the environmental and data-sourcing tradeoffs baked into modern AI development, and would be excited to build systems that take those constraints seriously.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools that bring abstract concepts to life.
           Take a look at some of my projects!
