@@ -47,8 +47,9 @@ export default function Page() {
           <div>Pursuing a Master's in Artificial Intelligence</div>
         </div>
         <div>
-          As a Master's student at Oregon State University studying Artificial Intelligence, I'm passionate about researching sustainable AI and developing systems that push the limits of what we thought possible.
-          I'm especially interested in the environmental and data-sourcing tradeoffs baked into modern AI development, and would be excited to build systems that take those constraints seriously.
+          As a Master's student at Oregon State University studying Artificial Intelligence, I'm passionate about researching sustainable AI.
+          I am especially interested in the environmental and data-sourcing tradeoffs baked into modern AI development and am excited to build systems that take those constraints seriously.
+          Beyond AI, I've taken an interest in embedded systems and tools that push the limits of what we thought possible.
           <br/><br/>
           Outside of the classroom, I enjoy developing video games, websites, and various tools that bring abstract concepts to life.
           Take a look at some of my projects!
