@@ -106,7 +106,9 @@ export default function HexagonCanvas({
     }
   }
 
-  const hexagons = useRef(new Map<String, Hex>())
+  const hexagons = useRef(new Map<String, Hex>());
+  let currentWidth = 0;
+  let currentHeight = 0;
 
   // Create a hashmap of hexagons that cover the screen
   function createHexagons(height: number, width: number) {
@@ -237,6 +239,12 @@ export default function HexagonCanvas({
       const dpr = window.devicePixelRatio || 1;
       const width = window.innerWidth;
       const height = window.innerHeight;
+
+      if (width != currentWidth || height != currentHeight) {
+        currentWidth = width;
+        currentHeight = height;
+        hexagons.current.clear();
+      }
 
       canvas.width = width * dpr;
       canvas.height = height * dpr;
